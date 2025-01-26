@@ -1,0 +1,42 @@
+POST http://127.0.0.1:1234/v1/completions
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="prompt"
+
+You are a sensitive data detection model. Please analyze the following code reports for any sensitive data, such as Personally Identifiable Information (PII), secrets (e.g., API keys, credentials), financial data, and any other potential security risks. Use the information provided in the Semgrep and SonarQube reports to help identify these issues. Return the detected sensitive data or vulnerabilities as a list of potential issues. Here are the details:
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="n_predict"
+
+1024
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="temperature"
+
+0.8
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="top_p"
+
+0.95
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="top_k"
+
+40
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="repeat_last_n"
+
+64
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="repeat_penalty"
+
+1.2
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="semgrep_report"; filename="semgrep_report.json"
+Content-Type: application/json
+
+C:\Users\loxru\OneDrive\Documenti\UNI\TESI\PROVA\reports\semgrep_report.json
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="sonarqube_report"; filename="sonarqube_report.json"
+Content-Type: application/json
+
+C:\Users\loxru\OneDrive\Documenti\UNI\TESI\PROVA\reports\sonarqube_report.json
+------WebKitFormBoundary7MA4YWxkTrZu0gW--

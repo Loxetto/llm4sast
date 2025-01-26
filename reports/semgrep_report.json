@@ -1,0 +1,14 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+              
+    src/app.js
+    ❯❱ javascript.browser.security.eval-detected.eval-detected
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/7ope                                                                     
+                                                                                                           
+           10┆ eval(code);

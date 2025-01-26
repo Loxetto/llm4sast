@@ -1,0 +1,74 @@
+services:
+  sonarqube:
+    image: sonarqube:9.9-community
+    container_name: sonarqube
+    ports:
+      - "9000:9000"
+    environment:
+      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE
+      - SONAR_JDBC_URL
+      - SONAR_JDBC_USERNAME
+      - SONAR_JDBC_PASSWORD
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+      - ./reports:/app/reports
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:13
+    container_name: sonarqube_db
+    environment:
+      - POSTGRES_USER=${SONAR_JDBC_USERNAME}
+      - POSTGRES_PASSWORD=${SONAR_JDBC_PASSWORD}
+      - POSTGRES_DB=sonar
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${SONAR_JDBC_USERNAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  semgrep:
+    image: semgrep/semgrep:latest
+    container_name: semgrep
+    environment:
+      - SEMGREP_APP_TOKEN
+      - SEMGREP_OUTPUT_FORMAT
+    volumes:
+      - .:/src
+    working_dir: /src
+    entrypoint: /bin/sh
+    command: -c "semgrep --config auto --output reports/semgrep_report.json src/"
+
+  sonarscanner:
+    image: sonarsource/sonar-scanner-cli:latest
+    container_name: sonarscanner
+    volumes:
+      - .:/project
+    working_dir: /project
+    entrypoint: ["sonar-scanner"]
+    environment:
+      - SONAR_HOST_URL
+      - SONAR_LOGIN
+
+  sonarqube-export:
+    image: curlimages/curl:latest
+    container_name: sonarqube_export
+    depends_on:
+      - sonarqube
+    volumes:
+      - ./reports:/reports
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      echo 'Exporting SonarQube issues to JSON...' &&
+      curl -u ${SONAR_LOGIN}: "${SONAR_HOST_URL}/api/issues/search?componentKeys=${SONAR_PROJECT_KEY}" 
+           -o /reports/sonarqube_report.json
+
+volumes:
+  sonarqube_data:
+  sonarqube_extensions:
+  db_data:

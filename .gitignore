@@ -1,0 +1,9 @@
+.scannerwork
+node_modules
+env
+llm-server
+target
+/target
+*.log
+*.OLD
+.env
