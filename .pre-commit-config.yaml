@@ -3,24 +3,24 @@ repos:
     hooks:
       - id: semgrep
         name: Semgrep Analysis
-        entry: docker-compose run --rm semgrep
+        entry: docker compose run --rm semgrep
         language: system
         pass_filenames: false
 
       - id: sonarqube
         name: SonarQube Analysis
-        entry: docker-compose run --rm sonarscanner
+        entry: docker compose run --rm sonarscanner
         language: system
         pass_filenames: false
 
-      - id: export-sonar-json
+      - id: sonarqube_export
         name: Export SonarQube JSON
-        entry: docker-compose run --rm sonarqube-export
+        entry: docker compose run --rm sonarqube-export
         language: system
         pass_filenames: false
 
       - id: llama-llm
         name: LLM Data Sensitive Detection
-        entry: python .\scripts\run_llm.py
+        entry: python3 .\/scripts\/run_llm.py
         language: system
         pass_filenames: false

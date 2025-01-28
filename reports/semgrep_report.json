@@ -1,8 +1,8 @@
-                  
-                  
-┌────────────────┐
-│ 1 Code Finding │
-└────────────────┘
+                   
+                   
+┌─────────────────┐
+│ 4 Code Findings │
+└─────────────────┘
               
     src/app.js
     ❯❱ javascript.browser.security.eval-detected.eval-detected
@@ -12,3 +12,28 @@
           Details: https://sg.run/7ope                                                                     
                                                                                                            
            10┆ eval(code);
+                                                 
+    src/java/main/com/example/bank/Processor.java
+    ❯❱ java.lang.security.sql.drivermanager-hardcoded-secret.drivermanager-hardcoded-secret
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,  
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external  
+          malicious actors. Use environment variables to securely provide credentials and other secrets or
+          retrieve them from a secure vault or Hardware Security Module (HSM).                            
+          Details: https://sg.run/0Bqw                                                                    
+                                                                                                          
+           22┆ try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+   
+    ❯❱ java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace
+          Possible active debug code detected. Deploying an application with debug code can create unintended
+          entry points or expose sensitive information.                                                      
+          Details: https://sg.run/4K8z                                                                       
+                                                                                                             
+           34┆ e.printStackTrace();
+                                                       
+    src/java/main/com/example/bank/PropertyHandler.java
+    ❯❱ java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace
+          Possible active debug code detected. Deploying an application with debug code can create unintended
+          entry points or expose sensitive information.                                                      
+          Details: https://sg.run/4K8z                                                                       
+                                                                                                             
+           19┆ e.printStackTrace();

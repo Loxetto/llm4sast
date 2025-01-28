@@ -8,7 +8,7 @@ import requests
 # 1) CONFIGURATIONS
 # ------------------------------------------------------------------------
 LLM_SERVER_URL = "http://127.0.0.1:1234/v1/completions"  # LM Studio Endpoint (example)
-CODE_DIR = "./src"
+CODE_DIR = "../src"
 
 CHUNK_SIZE = 150       # Number of lines per chunk
 N_PREDICT = 4096       # max_tokens

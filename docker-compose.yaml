@@ -5,10 +5,10 @@ services:
     ports:
       - "9000:9000"
     environment:
-      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE
-      - SONAR_JDBC_URL
-      - SONAR_JDBC_USERNAME
-      - SONAR_JDBC_PASSWORD
+      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=${SONAR_ES_BOOTSTRAP_CHECKS_DISABLE}
+      - SONAR_JDBC_URL=${SONAR_JDBC_URL}
+      - SONAR_JDBC_USERNAME=${SONAR_JDBC_USERNAME}
+      - SONAR_JDBC_PASSWORD=${SONAR_JDBC_PASSWORD}
     volumes:
       - sonarqube_data:/opt/sonarqube/data
       - sonarqube_extensions:/opt/sonarqube/extensions
@@ -36,8 +36,8 @@ services:
     image: semgrep/semgrep:latest
     container_name: semgrep
     environment:
-      - SEMGREP_APP_TOKEN
-      - SEMGREP_OUTPUT_FORMAT
+      - SEMGREP_APP_TOKEN=${SEMGREP_APP_TOKEN}
+      - SEMGREP_OUTPUT_FORMAT=${SEMGREP_OUTPUT_FORMAT}
     volumes:
       - .:/src
     working_dir: /src
@@ -52,8 +52,8 @@ services:
     working_dir: /project
     entrypoint: ["sonar-scanner"]
     environment:
-      - SONAR_HOST_URL
-      - SONAR_LOGIN
+      - SONAR_HOST_URL=${SONAR_HOST_URL}
+      - SONAR_LOGIN=${SONAR_LOGIN}
 
   sonarqube-export:
     image: curlimages/curl:latest
@@ -65,7 +65,7 @@ services:
     entrypoint: ["/bin/sh", "-c"]
     command: >
       echo 'Exporting SonarQube issues to JSON...' &&
-      curl -u ${SONAR_LOGIN}: "${SONAR_HOST_URL}/api/issues/search?componentKeys=${SONAR_PROJECT_KEY}" 
+      curl -u ${SONAR_LOGIN}: "${SONAR_HOST_URL}/api/issues/search?componentKeys=${SONAR_PROJECT_KEY}"
            -o /reports/sonarqube_report.json
 
 volumes:

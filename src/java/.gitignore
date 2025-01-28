@@ -1,0 +1,11 @@
+# Ignore IDE-specific files (e.g., Eclipse, IntelliJ)
+*.iml
+*.project
+.idea/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+target
+/target
