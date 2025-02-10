@@ -37,36 +37,59 @@ services:
     container_name: semgrep
     environment:
       - SEMGREP_APP_TOKEN=${SEMGREP_APP_TOKEN}
-      - SEMGREP_OUTPUT_FORMAT=${SEMGREP_OUTPUT_FORMAT}
     volumes:
       - .:/src
     working_dir: /src
-    entrypoint: /bin/sh
-    command: -c "semgrep --config auto --output reports/semgrep_report.json src/"
+    command: semgrep scan --config auto --json --output reports/semgrep_report.json src/s
 
   sonarscanner:
     image: sonarsource/sonar-scanner-cli:latest
     container_name: sonarscanner
     volumes:
       - .:/project
+      - ./reports:/project/reports
     working_dir: /project
-    entrypoint: ["sonar-scanner"]
-    environment:
-      - SONAR_HOST_URL=${SONAR_HOST_URL}
-      - SONAR_LOGIN=${SONAR_LOGIN}
+    stdin_open: true
+    tty: true
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      echo "Waiting for SonarQube..." &&
+      until curl -s http://sonarqube:9000/api/system/status | grep -q "UP"; do
+        sleep 5;
+      done &&
+      echo "SonarQube is UP. Starting scanner..." &&
+      sonar-scanner -Dsonar.projectKey=${SONAR_PROJECT_KEY} -Dsonar.sources=. -Dsonar.host.url=${SONAR_HOST_URL} -Dsonar.login=${SONAR_LOGIN}
 
   sonarqube-export:
     image: curlimages/curl:latest
-    container_name: sonarqube_export
+    container_name: sonarqube-export
     depends_on:
       - sonarqube
     volumes:
       - ./reports:/reports
+    environment:
+      SONAR_LOGIN: ${SONAR_LOGIN}
+      SONAR_HOST_URL: ${SONAR_HOST_URL}
+      SONAR_PROJECT_KEY: ${SONAR_PROJECT_KEY}
     entrypoint: ["/bin/sh", "-c"]
     command: >
       echo 'Exporting SonarQube issues to JSON...' &&
-      curl -u ${SONAR_LOGIN}: "${SONAR_HOST_URL}/api/issues/search?componentKeys=${SONAR_PROJECT_KEY}"
-           -o /reports/sonarqube_report.json
+      curl -v -u ${SONAR_LOGIN}: "${SONAR_HOST_URL}/api/issues/search?componentKeys=${SONAR_PROJECT_KEY}&types=VULNERABILITY,BUG,CODE_SMELL&ps=500" -o /reports/sonarqube_report.json &&
+      echo 'Export complete. Contents of report:' &&
+      cat /reports/sonarqube_report.json
+
+  pre-commit:
+    image: python:3.9
+    container_name: pre-commit
+    volumes:
+      - .:/repo
+      - ./reports:/repo/reports
+    working_dir: /repo
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      echo "Running pre-commit hooks..." &&
+      pre-commit run --all-files &&
+      echo "Pre-commit checks completed."
 
 volumes:
   sonarqube_data:

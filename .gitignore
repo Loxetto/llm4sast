@@ -7,3 +7,5 @@ target
 *.log
 *.OLD
 .env
+*.7z
+*.properties

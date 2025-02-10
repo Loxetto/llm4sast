@@ -7,20 +7,25 @@ repos:
         language: system
         pass_filenames: false
 
-      - id: sonarqube
+      - id: sonar-scanner
         name: SonarQube Analysis
-        entry: docker compose run --rm sonarscanner
+        entry: sonar-scanner.bat
+        args:
+          - -Dsonar.projectKey=llm4sast
+          - -Dsonar.sources=.
+          - -Dsonar.host.url=http://localhost:9000
+          - -Dsonar.login=sqp_0e63a60f61e7977b02928be29a51ad2bb41d6734
         language: system
         pass_filenames: false
 
       - id: sonarqube_export
         name: Export SonarQube JSON
-        entry: docker compose run --rm sonarqube-export
+        entry: docker compose --env-file .env run --rm sonarqube-export
         language: system
         pass_filenames: false
 
       - id: llama-llm
         name: LLM Data Sensitive Detection
-        entry: python3 .\/scripts\/run_llm.py
+        entry: python .\scripts\run_llm.py
         language: system
         pass_filenames: false
