@@ -46,7 +46,7 @@ services:
     image: sonarsource/sonar-scanner-cli:latest
     container_name: sonarscanner
     volumes:
-      - .:/project
+      - ./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_OLD:/project
       - ./reports:/project/reports
     working_dir: /project
     stdin_open: true
