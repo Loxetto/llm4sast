@@ -1,0 +1,141 @@
+{
+  "summary": {
+    "status": "Scan complete",
+    "files_scanned": 10,
+    "total_vulnerabilities": 10,
+    "percentage_files_affected": 100.0
+  },
+  "cwe_counts": {},
+  "vulnerabilities": [
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+      "line": 28,
+      "description": "Potential path traversal vulnerability in file name retrieval.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [
+        "https://cwe.mitre.org/data/definitions/22"
+      ],
+      "model": "LLM-based Security Analysis"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+      "line": 34,
+      "description": "Potential path traversal vulnerability in file name construction.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [
+        "https://cwe.mitre.org/data/definitions/22"
+      ],
+      "model": "LLM-based Security Analysis"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00003.java",
+      "line": 26,
+      "description": "Sensitive information is stored in a cookie without proper encryption or secure headers.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "Consider encrypting the sensitive data before storing it in cookies and ensure that cookies are set with appropriate security flags such as HttpOnly, Secure, and SameSite.",
+      "references": [
+        "https://example.com/cwe-1234"
+      ],
+      "model": "deepseek-coder-v2-lite-instruct"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00004.java",
+      "line": 23,
+      "description": "The cookie 'BenchmarkTest00004' is set with the value 'color', which could be used to track user activity across different sites.",
+      "severity": "medium",
+      "cwe_ids": [],
+      "confidence": "high",
+      "recommendation": "No recommendation",
+      "references": [
+        "https://owasp.org/www-community/attacks/Cookie_Sidejacking"
+      ],
+      "model": "LLM Security Model"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00005.java",
+      "line": 31,
+      "description": "Potential security issue in 'BenchmarkTest00005' where the use of DES encryption is identified, which is considered weak and should not be used for secure applications.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "Consider using a stronger encryption algorithm such as AES instead of DES for enhanced security.",
+      "references": [
+        "https://www.ncsc.gov.uk/guidance/encrypting-data-sensitive-information"
+      ],
+      "model": "LLM-001"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00006.java",
+      "line": 19,
+      "description": "The application passes user input to a process builder without proper sanitization or validation, which may lead to command injection vulnerabilities.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "Sanitize and validate all user inputs before passing them to process builders or other components that execute system commands.",
+      "references": [
+        "https://cwe.mitre.org/data/definitions/78.html"
+      ],
+      "model": "LLM-based Security Analysis Model"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00007.java",
+      "line": 24,
+      "description": "Potential command injection vulnerability detected in the use of 'Runtime.exec()' with OS commands retrieved from a user input header. This can lead to remote code execution if untrusted user input is processed.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [
+        "https://cwe.mitre.org/data/definitions/78"
+      ],
+      "model": "LLM-based Security Model"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00008.java",
+      "line": 36,
+      "description": "Potential SQL Injection vulnerability detected in the use of a JDBC CallableStatement.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "Consider validating and sanitizing all user inputs to prevent SQL Injection attacks.",
+      "references": [
+        "https://cwe.mitre.org/data/definitions/20"
+      ],
+      "model": "LLM-based Security Model"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00009.java",
+      "line": 38,
+      "description": "The application uses a weak hashing algorithm (SHA-384) which is not recommended for cryptographic purposes.",
+      "severity": "medium",
+      "cwe_ids": [],
+      "confidence": "high",
+      "recommendation": "No recommendation",
+      "references": [
+        "https://cwe.mitre.org/data/definitions/327.html"
+      ],
+      "model": "LLM-Security-Model"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00010.java",
+      "line": 34,
+      "description": "The use of a fixed-size random number generator (SecureRandom with 'SHA1PRNG') can lead to predictable values and may be vulnerable to attacks such as prediction or brute force.",
+      "severity": "medium",
+      "cwe_ids": [],
+      "confidence": "high",
+      "recommendation": "No recommendation",
+      "references": [
+        "https://cwe.mitre.org/data/definitions/338.html"
+      ],
+      "model": "LLM-based security analysis"
+    }
+  ]
+}

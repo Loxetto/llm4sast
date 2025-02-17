@@ -1,0 +1,152 @@
+{
+  "summary": {
+    "status": "Scan complete",
+    "files_scanned": 10,
+    "total_vulnerabilities": 10,
+    "percentage_files_affected": 90.0
+  },
+  "cwe_counts": {},
+  "vulnerabilities": [
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+      "line": 15,
+      "description": "The file includes a potentially insecure use of the `java.net.URL` class to construct URLs without proper validation.",
+      "severity": "medium",
+      "cwe_ids": [],
+      "confidence": "high",
+      "recommendation": "Use a secure URL constructor, such as `java.net.URI` or `java.net.URLEncoder`, to construct URLs.",
+      "references": [
+        "https://owasp.org/www-project-benchmark/"
+      ],
+      "model": "OWASP Benchmark v1.2"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+      "line": 3,
+      "description": "The code uses the `java.net.URLDecoder.decode()` method to decode a URL-encoded string, but it does not check if the decoded value is null before using it. This can lead to a `NullPointerException` when trying to access the `getValue()` method of the decoded cookie value.",
+      "severity": "medium",
+      "cwe_ids": [],
+      "confidence": "high",
+      "recommendation": "Use the ESAPI encoder to encode the entire string before decoding it, or check if the decoded value is null before using it.",
+      "references": [
+        "https://owasp.org/www-project-benchmark/",
+        "https://owasp.org/www-project-esapi/"
+      ],
+      "model": "ESAPI Encoder"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+      "line": 10,
+      "description": "The code uses the `java.io.FileOutputStream` class to write a file, but it does not close the stream in a finally block. This can lead to resource leaks if an exception is thrown.",
+      "severity": "low",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "Close the `FileOutputStream` stream in a finally block to prevent resource leaks.",
+      "references": [
+        "https://owasp.org/www-project-benchmark/",
+        "https://docs.oracle.com/javase/tutorial/essential/io/file.html"
+      ],
+      "model": "Java IO"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00003.java",
+      "line": 10,
+      "description": "The code uses a hard-coded secret key for the Cookie object, making it vulnerable to cookie tampering attacks.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [
+        "https://owasp.org/www-project-benchmark/",
+        "https://www.owasp.org/index.php/Cookie_Tampering_(OWASP_Benchmark)_-v1.2#How_to_attack_the_cookie",
+        "cwe-ids':['CWE-512'],"
+      ],
+      "model": "llama-3.2-3b-instruct"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00004.java",
+      "line": 14,
+      "description": "The 'maxAge' attribute of the cookie is set to 3 minutes, which could potentially allow an attacker to predict when the cookie will expire.",
+      "severity": "medium",
+      "cwe_ids": [],
+      "confidence": "high",
+      "recommendation": "Set the 'maxAge' attribute to a fixed value (e.g., 30 minutes) or use a random value.",
+      "references": [
+        "https://owasp.org/www-project-benchmark/",
+        "https://www.owasp.org/index.php?title=Cookie_Security#Predictable_Cookie_Age"
+      ],
+      "model": "OWASP Benchmark v1.2"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00005.java",
+      "line": 34,
+      "description": "The DES encryption algorithm is vulnerable to padding oracle attacks. An attacker can manipulate the input data to force the decryption of a specific block, revealing sensitive information.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [
+        "https://owasp.org/www-project-benchmark/](https://owasp.org/www-project-benchmark/)",
+        "model",
+        "recommendation",
+        "cwe_ids"
+      ],
+      "model": "llama-3.2-3b-instruct"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00006.java",
+      "line": 24,
+      "description": "The code uses `System.getProperty(",
+      "severity": "low",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "Use a more secure method to retrieve the OS name, such as using the `java.lang.System.getProperty(\"os.name\", \"Windows\")` method instead of `System.getProperty(",
+      "references": [],
+      "model": "OWASP Benchmark v1.2"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00008.java",
+      "line": 12,
+      "description": "The code uses a stored procedure call with user input as a parameter, which is not validated or sanitized.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "Validate and sanitize user input before passing it to the stored procedure call.",
+      "references": [
+        "https://owasp.org/www-project-benchmark/",
+        "https://owasp.com/security-cheatsheets.html"
+      ],
+      "model": "Java"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00009.java",
+      "line": 15,
+      "description": "The code uses a hard-coded value for the provider index in java.security.MessageDigest.getInstance(). This makes it vulnerable to provider index attacks.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "Use the default provider index or specify a secure provider index.",
+      "references": [
+        "https://owasp.org/www-project-benchmark/",
+        "https://owasp.github.io/esapi-code-security-cheat-sheet/",
+        "https://www.owasp.org/index.php/Provider_index_attack"
+      ],
+      "model": "ESAPI"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00010.java",
+      "line": 15,
+      "description": "The SecureRandom instance used for generating random numbers is not properly configured to use a secure source of randomness.",
+      "severity": "low",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "Use a secure random number generator, such as the SecureRandom instance with the SHA256PRNG algorithm.",
+      "references": [
+        "https://owasp.org/www-project-benchmark/",
+        "https://www.owasp.org/index.php/Secure_Miscellaneous_CWE-327",
+        "CWE-327: Use of insecure random number generator"
+      ],
+      "model": "Java"
+    }
+  ]
+}

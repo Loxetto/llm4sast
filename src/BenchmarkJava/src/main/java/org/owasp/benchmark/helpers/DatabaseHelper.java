@@ -41,6 +41,7 @@ public class DatabaseHelper {
             new org.owasp.benchmark.helpers.HibernateUtil(true);
     public static final boolean hideSQLErrors =
             false; // If we want SQL Exceptions to be suppressed from being displayed to the user of
+
     // the web app.
 
     static {

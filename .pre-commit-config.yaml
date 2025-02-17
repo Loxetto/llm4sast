@@ -1,31 +1,39 @@
 repos:
   - repo: local
     hooks:
+      # 1) Run Semgrep in Docker
       - id: semgrep
         name: Semgrep Analysis
-        entry: docker compose run --rm semgrep
+        entry: docker compose --env-file .env run --rm semgrep
         language: system
         pass_filenames: false
 
+      # 2) Minify Semgrep report
+      - id: semgrep-minifier
+        name: Semgrep report minifier
+        entry: python scripts/semgrep_minifier.py
+        language: system
+        pass_filenames: false
+
+      # 3) SonarQube Analysis
+      #    We rely on environment variables and the docker-compose
+      #    "sonarscanner" service to handle any -Dsonar.* properties.
       - id: sonar-scanner
         name: SonarQube Analysis
-        entry: sonar-scanner.bat
-        args:
-          - -Dsonar.projectKey=llm4sast
-          - -Dsonar.sources=.
-          - -Dsonar.host.url=http://localhost:9000
-          - -Dsonar.login=sqp_0e63a60f61e7977b02928be29a51ad2bb41d6734
+        entry: docker compose --env-file .env run --rm sonarscanner
         language: system
         pass_filenames: false
 
+      # 4) Export SonarQube JSON
       - id: sonarqube_export
         name: Export SonarQube JSON
         entry: docker compose --env-file .env run --rm sonarqube-export
         language: system
         pass_filenames: false
 
+      # 5) LLM Data Sensitive Detection
       - id: llama-llm
         name: LLM Data Sensitive Detection
-        entry: python .\scripts\run_llm.py
+        entry: python scripts/run_llm.py
         language: system
         pass_filenames: false

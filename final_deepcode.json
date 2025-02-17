@@ -1,0 +1,75 @@
+{
+  "summary": {
+    "status": "Scan complete",
+    "files_scanned": 10,
+    "total_vulnerabilities": 5,
+    "percentage_files_affected": 20.0,
+    "elapsed_sec": 59.59
+  },
+  "cwe_counts": {
+    "CWE-127": 1
+  },
+  "vulnerabilities": [
+    {
+      "file_path": "C:/Users/loxru/OneDrive/Documenti/UNI/TESI/PROVA/src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\n",
+      "line": 1,
+      "description": "No vulnerabilities found in this code.",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "deepcode-7b-aurora-v13"
+    },
+    {
+      "file_path": "C:/Users/loxru/OneDrive/Documenti/UNI/TESI/PROVA/src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\n",
+      "line": 7,
+      "description": "The application does not check the return value of Runtime.exec() which can lead to security issues such as command injection attacks.\r\nTo mitigate this issue, you should always use a whitelist or sanitize user input before passing it into exec(). For example: cmd = Utils.getInsecureOSCommandString(this.getClass().getClassLoader()); argsEnv[0] = org.owasp.benchmark.helpers.Utils.sanitizeForShell(param);",
+      "severity": "high",
+      "cwe_ids": [
+        "CWE-127"
+      ],
+      "confidence": "medium",
+      "recommendation": "",
+      "references": [
+        ""
+      ],
+      "model": ""
+    },
+    {
+      "file_path": "C:/Users/loxru/OneDrive/Documenti/UNI/TESI/PROVA/src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\n        BenchmarkTest00008.java",
+      "line": 26,
+      "description": "The SQL statement is not parameterized, which makes the application vulnerable to SQL Injection attacks.\r\nTo prevent this vulnerability you should use a prepared statement or parameterize your query.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "deepcode-7b-aurora-v13"
+    },
+    {
+      "file_path": "C:/Users/loxru/OneDrive/Documenti/UNI/TESI/PROVA/src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\n",
+      "line": 9,
+      "description": "This file is part of the Open Web Application Security Project (OWASP) Benchmark Project. For details, please see <a href=\"https://owasp.org/www-project-benchmark/\">https://owasp.org/www-project-benchmark/</a>. The OWASP Benchmark is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.\n",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "deepcode-7b-aurora-v13"
+    },
+    {
+      "file_path": "C:/Users/loxru/OneDrive/Documenti/UNI/TESI/PROVA/src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\n",
+      "line": 1,
+      "description": "The OWASP Benchmark is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2. The OWASP Benchmark is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "",
+      "references": [
+        ""
+      ],
+      "model": "OWASP-Benchmark:testcode/src/main/java/org/owasp/benchmark/\n"
+    }
+  ]
+}

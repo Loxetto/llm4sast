@@ -1,0 +1,129 @@
+{
+  "summary": {
+    "status": "Scan complete",
+    "files_scanned": 10,
+    "total_vulnerabilities": 10,
+    "percentage_files_affected": 70.0
+  },
+  "cwe_counts": {
+    "CWE-327": 2
+  },
+  "vulnerabilities": [
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+      "line": 37,
+      "description": "Path Traversal Vulnerability in BenchmarkTest00001",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    },
+    {
+      "file_path": "/path/to/BenchmarkTest00003.java",
+      "line": 29,
+      "description": "Sensitive data is stored in a cookie without secure flag.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    },
+    {
+      "file_path": "/path/to/BenchmarkTest00003.java",
+      "line": 47,
+      "description": "Sensitive data is stored in a file without secure permissions.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "low",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    },
+    {
+      "file_path": "/path/to/BenchmarkTest00003.java",
+      "line": 61,
+      "description": "Sensitive data is hashed using an insecure algorithm (SHA512).",
+      "severity": "critical",
+      "cwe_ids": [
+        "CWE-327"
+      ],
+      "confidence": "high",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    },
+    {
+      "file_path": "/path/to/BenchmarkTest00003.java",
+      "line": 69,
+      "description": "Sensitive data is hashed using an insecure algorithm (SHA512).",
+      "severity": "critical",
+      "cwe_ids": [
+        "CWE-327"
+      ],
+      "confidence": "high",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00004.java",
+      "line": 39,
+      "description": "Cookie is not secure.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    },
+    {
+      "file_path": "BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00005.java",
+      "line": "72",
+      "description": "Sensitive data is stored in plaintext format in the file 'passwordFile.txt'. This could expose sensitive information to unauthorized parties.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "Store sensitive data securely and avoid storing it in plaintext.",
+      "references": [
+        "https://owasp.org/www-project-secure-coding/#SecureCoding-SensitiveDataStorage"
+      ],
+      "model": "LLM"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00008.java",
+      "line": 25,
+      "description": "SQL Injection vulnerability in the SQL query parameter.",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "high",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00009.java",
+      "line": 65,
+      "description": "Sensitive value '?' hashed and stored<br/>Hash Test java.security.MessageDigest.getInstance(java.lang.String,java.security.Provider) executed",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    },
+    {
+      "file_path": "BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00010.java",
+      "line": 68,
+      "description": "Weak Randomness Test java.security.SecureRandom.nextInt(int) executed",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    }
+  ]
+}

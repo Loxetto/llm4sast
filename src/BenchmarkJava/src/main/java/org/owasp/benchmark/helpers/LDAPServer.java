@@ -231,7 +231,9 @@ public class LDAPServer {
         }
     }
 
-    /** @return A map where the key is the attribute name the value is the oid. */
+    /**
+     * @return A map where the key is the attribute name the value is the oid.
+     */
     public Map<String, String> getSystemIndexMap() throws IndexNotFoundException {
         Map<String, String> result = new LinkedHashMap<>();
         Iterator<String> it = getBasePartition().getSystemIndices();
@@ -246,7 +248,9 @@ public class LDAPServer {
         return result;
     }
 
-    /** @return A map where the key is the attribute name the value is the oid. */
+    /**
+     * @return A map where the key is the attribute name the value is the oid.
+     */
     public Map<String, String> getUserIndexMap() throws IndexNotFoundException {
         Map<String, String> result = new LinkedHashMap<>();
         Iterator<String> it = getBasePartition().getUserIndices();

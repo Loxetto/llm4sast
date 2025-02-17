@@ -1,4 +1,5 @@
 package org.owasp.benchmark.helpers.filters;
+
 /**
  * OWASP Benchmark Project
  *

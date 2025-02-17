@@ -1,0 +1,93 @@
+{
+  "summary": {
+    "status": "Scan complete",
+    "files_scanned": 10,
+    "total_vulnerabilities": 7,
+    "percentage_files_affected": 70.0,
+    "elapsed_sec": 53.36
+  },
+  "cwe_counts": {},
+  "vulnerabilities": [
+    {
+      "file_path": "C:/Users/loxru/OneDrive/Documenti/UNI/TESI/PROVA/src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+      "line": 14,
+      "description": "Path Traversal Vulnerability",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    },
+    {
+      "file_path": "C:/Users/loxru/OneDrive/Documenti/UNI/TESI/PROVA/src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00004.java",
+      "line": 13,
+      "description": "The cookie 'BenchmarkTest00004' is not marked as secure, which means that it can be accessed by a malicious third party.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "Ensure that all cookies are marked as secure to prevent unauthorized access.",
+      "references": [
+        "https://owasp.org/www-project-secure-coding/#SecureCoding-CookieSecurity"
+      ],
+      "model": "LLM-based Security Findings Report"
+    },
+    {
+      "file_path": "C:/Users/loxru/OneDrive/Documenti/UNI/TESI/PROVA/src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00005.java",
+      "line": 139,
+      "description": "Sensitive data is stored in clear text.",
+      "severity": "high",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "Store sensitive data encrypted.",
+      "references": [
+        "https://owasp.org/www-project-secure-coding/#SecureCoding-InformationExposure"
+      ],
+      "model": "OWASP Benchmark v1.2"
+    },
+    {
+      "file_path": "C:/Users/loxru/OneDrive/Documenti/UNI/TESI/PROVA/src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00006.java",
+      "line": 54,
+      "description": "Command injection vulnerability in org.owasp.benchmark.testcode_low.BenchmarkTest00006.doPost()",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    },
+    {
+      "file_path": "C:/Users/loxru/OneDrive/Documenti/UNI/TESI/PROVA/src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00007.java",
+      "line": 13,
+      "description": "Command injection vulnerability in BenchmarkTest00007.doPost() method.",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "high",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    },
+    {
+      "file_path": "C:/Users/loxru/OneDrive/Documenti/UNI/TESI/PROVA/src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00009.java",
+      "line": 28,
+      "description": "Sensitive value '?' hashed and stored",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    },
+    {
+      "file_path": "C:/Users/loxru/OneDrive/Documenti/UNI/TESI/PROVA/src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00010.java",
+      "line": 36,
+      "description": "Weak Randomness Test java.security.SecureRandom.nextInt(int) executed",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "dolphincoder-starcoder2-7b"
+    }
+  ]
+}

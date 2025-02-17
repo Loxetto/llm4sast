@@ -1,0 +1,354 @@
+{
+  "results": [
+    {
+      "check_id": "java.lang.security.audit.cookie-missing-httponly.cookie-missing-httponly",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+      "line": 42,
+      "severity": "",
+      "message": "A cookie was detected without setting the 'HttpOnly' flag. The 'HttpOnly' flag for cookies instructs the browser to forbid client-side scripts from reading the cookie. Set the 'HttpOnly' flag by calling 'cookie.setHttpOnly(true);'",
+      "cwe": [
+        "CWE-1004"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.audit.cookie-missing-httponly.cookie-missing-httponly",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+      "line": 42,
+      "severity": "",
+      "message": "A cookie was detected without setting the 'HttpOnly' flag. The 'HttpOnly' flag for cookies instructs the browser to forbid client-side scripts from reading the cookie. Set the 'HttpOnly' flag by calling 'cookie.setHttpOnly(true);'",
+      "cwe": [
+        "CWE-1004"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.audit.cookie-missing-samesite.cookie-missing-samesite",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+      "line": 42,
+      "severity": "",
+      "message": "The application does not appear to verify inbound requests which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application uses cookie-based authentication, an attacker can trick users into sending authenticated HTTP requests without their knowledge from any arbitrary domain they visit. To prevent this vulnerability start by identifying if the framework or library leveraged has built-in features or offers plugins for CSRF protection. CSRF tokens should be unique and securely random. The `Synchronizer Token` or `Double Submit Cookie` patterns with defense-in-depth mechanisms such as the `sameSite` cookie flag can help prevent CSRF. For more information, see: [Cross-site request forgery prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)",
+      "cwe": [
+        "CWE-352"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+      "line": 71,
+      "severity": "",
+      "message": "Detected a potential path traversal. A malicious actor could control the location of this file, to include going backwards in the directory with '../'. To address this, ensure that user-controlled variables in file paths are sanitized. You may also consider using a utility method such as org.apache.commons.io.FilenameUtils.getName(...) to only retrieve the file name from the path.",
+      "cwe": [
+        "CWE-22"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.httpservlet-path-traversal.httpservlet-path-traversal",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+      "line": 71,
+      "severity": "",
+      "message": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the file path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files. To prevent this vulnerability, validate and sanitize any input that is used to create references to file paths. Also, enforce strict file access controls. For example, choose privileges allowing public-facing applications to access only the required files. In Java, you may also consider using a utility method such as `org.apache.commons.io.FilenameUtils.getName(...)` to only retrieve the file name from the path. ",
+      "cwe": [
+        "CWE-22"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.httpservlet-path-traversal-deepsemgrep.httpservlet-path-traversal-deepsemgrep",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+      "line": 71,
+      "severity": "",
+      "message": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files. To prevent this vulnerability, validate and sanitize any input that is used to create references to file paths. Also, enforce strict file access controls. For example, choose privileges allowing public-facing applications to access only the required files. In Java, you may also consider using a utility method such as `org.apache.commons.io.FilenameUtils.getName(...)` to only retrieve the file name from the path.",
+      "cwe": [
+        "CWE-22"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.audit.cookie-missing-httponly.cookie-missing-httponly",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+      "line": 42,
+      "severity": "",
+      "message": "A cookie was detected without setting the 'HttpOnly' flag. The 'HttpOnly' flag for cookies instructs the browser to forbid client-side scripts from reading the cookie. Set the 'HttpOnly' flag by calling 'cookie.setHttpOnly(true);'",
+      "cwe": [
+        "CWE-1004"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.audit.cookie-missing-httponly.cookie-missing-httponly",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+      "line": 42,
+      "severity": "",
+      "message": "A cookie was detected without setting the 'HttpOnly' flag. The 'HttpOnly' flag for cookies instructs the browser to forbid client-side scripts from reading the cookie. Set the 'HttpOnly' flag by calling 'cookie.setHttpOnly(true);'",
+      "cwe": [
+        "CWE-1004"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.audit.cookie-missing-samesite.cookie-missing-samesite",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+      "line": 42,
+      "severity": "",
+      "message": "The application does not appear to verify inbound requests which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application uses cookie-based authentication, an attacker can trick users into sending authenticated HTTP requests without their knowledge from any arbitrary domain they visit. To prevent this vulnerability start by identifying if the framework or library leveraged has built-in features or offers plugins for CSRF protection. CSRF tokens should be unique and securely random. The `Synchronizer Token` or `Double Submit Cookie` patterns with defense-in-depth mechanisms such as the `sameSite` cookie flag can help prevent CSRF. For more information, see: [Cross-site request forgery prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)",
+      "cwe": [
+        "CWE-352"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+      "line": 72,
+      "severity": "",
+      "message": "Detected a potential path traversal. A malicious actor could control the location of this file, to include going backwards in the directory with '../'. To address this, ensure that user-controlled variables in file paths are sanitized. You may also consider using a utility method such as org.apache.commons.io.FilenameUtils.getName(...) to only retrieve the file name from the path.",
+      "cwe": [
+        "CWE-22"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.httpservlet-path-traversal.httpservlet-path-traversal",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+      "line": 72,
+      "severity": "",
+      "message": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the file path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files. To prevent this vulnerability, validate and sanitize any input that is used to create references to file paths. Also, enforce strict file access controls. For example, choose privileges allowing public-facing applications to access only the required files. In Java, you may also consider using a utility method such as `org.apache.commons.io.FilenameUtils.getName(...)` to only retrieve the file name from the path. ",
+      "cwe": [
+        "CWE-22"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.httpservlet-path-traversal-deepsemgrep.httpservlet-path-traversal-deepsemgrep",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+      "line": 72,
+      "severity": "",
+      "message": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files. To prevent this vulnerability, validate and sanitize any input that is used to create references to file paths. Also, enforce strict file access controls. For example, choose privileges allowing public-facing applications to access only the required files. In Java, you may also consider using a utility method such as `org.apache.commons.io.FilenameUtils.getName(...)` to only retrieve the file name from the path.",
+      "cwe": [
+        "CWE-22"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+      "line": 85,
+      "severity": "",
+      "message": "Detected a potential path traversal. A malicious actor could control the location of this file, to include going backwards in the directory with '../'. To address this, ensure that user-controlled variables in file paths are sanitized. You may also consider using a utility method such as org.apache.commons.io.FilenameUtils.getName(...) to only retrieve the file name from the path.",
+      "cwe": [
+        "CWE-22"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.httpservlet-path-traversal.httpservlet-path-traversal",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+      "line": 85,
+      "severity": "",
+      "message": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the file path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files. To prevent this vulnerability, validate and sanitize any input that is used to create references to file paths. Also, enforce strict file access controls. For example, choose privileges allowing public-facing applications to access only the required files. In Java, you may also consider using a utility method such as `org.apache.commons.io.FilenameUtils.getName(...)` to only retrieve the file name from the path. ",
+      "cwe": [
+        "CWE-22"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.audit.cookie-missing-httponly.cookie-missing-httponly",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00003.java",
+      "line": 42,
+      "severity": "",
+      "message": "A cookie was detected without setting the 'HttpOnly' flag. The 'HttpOnly' flag for cookies instructs the browser to forbid client-side scripts from reading the cookie. Set the 'HttpOnly' flag by calling 'cookie.setHttpOnly(true);'",
+      "cwe": [
+        "CWE-1004"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.audit.cookie-missing-httponly.cookie-missing-httponly",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00003.java",
+      "line": 42,
+      "severity": "",
+      "message": "A cookie was detected without setting the 'HttpOnly' flag. The 'HttpOnly' flag for cookies instructs the browser to forbid client-side scripts from reading the cookie. Set the 'HttpOnly' flag by calling 'cookie.setHttpOnly(true);'",
+      "cwe": [
+        "CWE-1004"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.audit.cookie-missing-samesite.cookie-missing-samesite",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00003.java",
+      "line": 42,
+      "severity": "",
+      "message": "The application does not appear to verify inbound requests which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application uses cookie-based authentication, an attacker can trick users into sending authenticated HTTP requests without their knowledge from any arbitrary domain they visit. To prevent this vulnerability start by identifying if the framework or library leveraged has built-in features or offers plugins for CSRF protection. CSRF tokens should be unique and securely random. The `Synchronizer Token` or `Double Submit Cookie` patterns with defense-in-depth mechanisms such as the `sameSite` cookie flag can help prevent CSRF. For more information, see: [Cross-site request forgery prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)",
+      "cwe": [
+        "CWE-352"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.audit.cookie-missing-httponly.cookie-missing-httponly",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00004.java",
+      "line": 42,
+      "severity": "",
+      "message": "A cookie was detected without setting the 'HttpOnly' flag. The 'HttpOnly' flag for cookies instructs the browser to forbid client-side scripts from reading the cookie. Set the 'HttpOnly' flag by calling 'cookie.setHttpOnly(true);'",
+      "cwe": [
+        "CWE-1004"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.audit.cookie-missing-httponly.cookie-missing-httponly",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00004.java",
+      "line": 42,
+      "severity": "",
+      "message": "A cookie was detected without setting the 'HttpOnly' flag. The 'HttpOnly' flag for cookies instructs the browser to forbid client-side scripts from reading the cookie. Set the 'HttpOnly' flag by calling 'cookie.setHttpOnly(true);'",
+      "cwe": [
+        "CWE-1004"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.audit.cookie-missing-samesite.cookie-missing-samesite",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00004.java",
+      "line": 42,
+      "severity": "",
+      "message": "The application does not appear to verify inbound requests which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application uses cookie-based authentication, an attacker can trick users into sending authenticated HTTP requests without their knowledge from any arbitrary domain they visit. To prevent this vulnerability start by identifying if the framework or library leveraged has built-in features or offers plugins for CSRF protection. CSRF tokens should be unique and securely random. The `Synchronizer Token` or `Double Submit Cookie` patterns with defense-in-depth mechanisms such as the `sameSite` cookie flag can help prevent CSRF. For more information, see: [Cross-site request forgery prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)",
+      "cwe": [
+        "CWE-352"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.tainted-session-from-http-request-deepsemgrep.tainted-session-from-http-request-deepsemgrep",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00004.java",
+      "line": 67,
+      "severity": "",
+      "message": "Mixing trusted and untrusted data within the same structure can lead to trust boundary violations, where unvalidated data is mistakenly trusted, potentially bypassing security mechanisms. Thoroughly sanitize user input before passing it into such function calls.",
+      "cwe": [
+        "CWE-501"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.tainted-session-from-http-request.tainted-session-from-http-request",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00004.java",
+      "line": 67,
+      "severity": "",
+      "message": "Detected input from a HTTPServletRequest going into a session command, like `setAttribute`. User input into such a command could lead to an attacker inputting malicious code into your session parameters, blurring the line between what's trusted and untrusted, and therefore leading to a trust boundary violation. This could lead to programmers trusting unvalidated data. Instead, thoroughly sanitize user input before passing it into such function calls.",
+      "cwe": [
+        "CWE-501"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00004.java",
+      "line": 69,
+      "severity": "",
+      "message": "Detected a request with potential user-input going into a OutputStream or Writer object. This bypasses any view or template environments, including HTML escaping, which may expose this application to cross-site scripting (XSS) vulnerabilities. Consider using a view technology such as JavaServer Faces (JSFs) which automatically escapes HTML views.",
+      "cwe": [
+        "CWE-79"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00005.java",
+      "line": 63,
+      "severity": "",
+      "message": "DES is considered deprecated. AES is the recommended cipher. Upgrade to use AES. See https://www.nist.gov/news-events/news/2005/06/nist-withdraws-outdated-data-encryption-standard for more information.",
+      "cwe": [
+        "CWE-326"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00005.java",
+      "line": 66,
+      "severity": "",
+      "message": "Triple DES (3DES or DESede) is considered deprecated. AES is the recommended cipher. Upgrade to use AES.",
+      "cwe": [
+        "CWE-326"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00005.java",
+      "line": 66,
+      "severity": "",
+      "message": "DES is considered deprecated. AES is the recommended cipher. Upgrade to use AES. See https://www.nist.gov/news-events/news/2005/06/nist-withdraws-outdated-data-encryption-standard for more information.",
+      "cwe": [
+        "CWE-326"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00005.java",
+      "line": 118,
+      "severity": "",
+      "message": "Possible active debug code detected. Deploying an application with debug code can create unintended entry points or expose sensitive information.",
+      "cwe": [
+        "CWE-489"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00006.java",
+      "line": 62,
+      "severity": "",
+      "message": "Detected input from a HTTPServletRequest going into a 'ProcessBuilder' or 'exec' command. This could lead to command injection if variables passed into the exec commands are not properly sanitized. Instead, avoid using these OS commands with user-supplied input, or, if you must use these commands, use a whitelist of specific values.",
+      "cwe": [
+        "CWE-78"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.tainted-cmd-from-http-request.tainted-cmd-from-http-request",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00006.java",
+      "line": 62,
+      "severity": "",
+      "message": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system. To prevent command injection, avoid executing OS commands with user input. If this is unavoidable, validate and sanitize the user input, and use safe methods for executing the commands. For more information, see [JavaScript command injection prevention](https://semgrep.dev/docs/cheat-sheets/java-command-injection/)",
+      "cwe": [
+        "CWE-78"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.audit.command-injection-process-builder.command-injection-process-builder",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00006.java",
+      "line": 66,
+      "severity": "",
+      "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+      "cwe": [
+        "CWE-78"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.tainted-cmd-from-http-request-deepsemgrep.tainted-cmd-from-http-request-deepsemgrep",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00006.java",
+      "line": 66,
+      "severity": "",
+      "message": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system. To prevent this vulnerability, avoid executing OS commands with user input. If this is unavoidable, validate and sanitize the input, and use safe methods for executing the commands. For more information, see: [Java command injection prevention](https://semgrep.dev/docs/cheat-sheets/java-command-injection/)",
+      "cwe": [
+        "CWE-78"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00007.java",
+      "line": 61,
+      "severity": "",
+      "message": "Detected input from a HTTPServletRequest going into a 'ProcessBuilder' or 'exec' command. This could lead to command injection if variables passed into the exec commands are not properly sanitized. Instead, avoid using these OS commands with user-supplied input, or, if you must use these commands, use a whitelist of specific values.",
+      "cwe": [
+        "CWE-78"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.tainted-cmd-from-http-request.tainted-cmd-from-http-request",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00007.java",
+      "line": 61,
+      "severity": "",
+      "message": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system. To prevent command injection, avoid executing OS commands with user input. If this is unavoidable, validate and sanitize the user input, and use safe methods for executing the commands. For more information, see [JavaScript command injection prevention](https://semgrep.dev/docs/cheat-sheets/java-command-injection/)",
+      "cwe": [
+        "CWE-78"
+      ]
+    },
+    {
+      "check_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00008.java",
+      "line": 57,
+      "severity": "",
+      "message": "Detected input from a HTTPServletRequest going into a SQL sink or statement. This could lead to SQL injection if variables in the SQL statement are not properly sanitized. Use parameterized SQL queries or properly sanitize user input instead.",
+      "cwe": [
+        "CWE-89"
+      ]
+    },
+    {
+      "check_id": "java.servlets.security.audit.cookie-missing-samesite.cookie-missing-samesite",
+      "path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00010.java",
+      "line": 99,
+      "severity": "",
+      "message": "The application does not appear to verify inbound requests which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application uses cookie-based authentication, an attacker can trick users into sending authenticated HTTP requests without their knowledge from any arbitrary domain they visit. To prevent this vulnerability start by identifying if the framework or library leveraged has built-in features or offers plugins for CSRF protection. CSRF tokens should be unique and securely random. The `Synchronizer Token` or `Double Submit Cookie` patterns with defense-in-depth mechanisms such as the `sameSite` cookie flag can help prevent CSRF. For more information, see: [Cross-site request forgery prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)",
+      "cwe": [
+        "CWE-352"
+      ]
+    }
+  ]
+}

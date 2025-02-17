@@ -1,0 +1,92 @@
+{
+  "summary": {
+    "status": "Scan complete",
+    "files_scanned": 10,
+    "total_vulnerabilities": 6,
+    "percentage_files_affected": 60.0
+  },
+  "cwe_counts": {
+    "": 2,
+    "CWE-89": 1
+  },
+  "vulnerabilities": [
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\nBenchmarkTest00003.java",
+      "line": 256,
+      "description": "The method doPost() in class BenchmarkTest00003 does not perform any sensitive data detection or validation, which may lead to security vulnerabilities if the input contains sensitive information.",
+      "severity": "medium",
+      "cwe_ids": [
+        ""
+      ],
+      "confidence": "medium",
+      "recommendation": "'doPost()' method should perform some form of data validation or sanitization on the input to prevent sensitive information from being stored.",
+      "references": [
+        ""
+      ],
+      "model": "OWASP Benchmark v1.2 (https://owasp.org/www-project-benchmark/)"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\nBenchmarkTest00004.java",
+      "line": 235,
+      "description": "The cookie 'BenchmarkTest00004' is set with a value, but it does not have any CWE or vulnerability associated with it.",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "deepcode-7b-aurora-v13"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\nBenchmarkTest00005.java",
+      "line": 294,
+      "description": "The encryption key is not secure and can be easily guessed or brute forced.\r\nThis vulnerability could allow an attacker to decrypt the data without knowing the secret value, leading to sensitive information disclosure.",
+      "severity": "high",
+      "cwe_ids": [
+        ""
+      ],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [
+        "https://owasp.org/www-project-benchmark/index.html"
+      ],
+      "model": "deepcode-7b-aurora-v13"
+    },
+    {
+      "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\nBenchmarkTest00008.java",
+      "line": 29,
+      "description": "SQL Injection vulnerability in stored procedure call parameter.\nAn SQL injection attack occurs when an attacker injects malicious SQL statements into the application to affect its normal operation or retrieve sensitive information from the database.",
+      "severity": "high",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "confidence": "medium",
+      "recommendation": "To mitigate the SQL injection vulnerability, ensure that stored procedure call parameters are properly sanitized or parameterized to prevent malicious code from being executed.",
+      "references": [
+        "https://owasp.org/www-community/w/index.php?title=Benchmark_v1.2#SQLInjection"
+      ],
+      "model": "OWASP Benchmark v1.2"
+    },
+    {
+      "file_path": "BenchmarkTest00009.java",
+      "line": 79,
+      "description": "Sensitive value '?'' hashed and stored\n",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "",
+      "references": [],
+      "model": "OWASP Benchmark v1.2 - Testcode (low) /hash-00/BenchmarkTest00009"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\nBenchmarkTest00010.java",
+      "line": 239,
+      "description": "Weak Randomness Test java.security.SecureRandom.nextInt(int) executed without any vulnerabilities found.",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "deepcode-7b-aurora-v13"
+    }
+  ]
+}

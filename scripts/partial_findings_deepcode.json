@@ -1,0 +1,48 @@
+{
+  "findings": [
+    {
+      "file_path": "BenchmarkTest00003.java",
+      "line": 100,
+      "description": "The application stores the hashed password in a file without any encryption or salting, which may lead to security vulnerabilities if attackers gain access to this file.",
+      "severity": "high",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "confidence": "medium",
+      "recommendation": "To mitigate this vulnerability, the application should use a strong encryption algorithm like AES-256 with a unique salt for each user to securely store sensitive data in files.",
+      "references": [
+        "https://owasp.org/www-community/w/index.php?title=Password_Storage_(CWE-20)",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
+      ],
+      "model": "OWASP Benchmark v1.2"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\nBenchmarkTest00005.java",
+      "line": 67,
+      "description": "The method doPost() in class BenchmarkTest00005 contains a code based on example from: http://examples.javacodegeeks.com/core-java/crypto/encrypt-decrypt-file-stream-with-des/. However, this is not recommended for storing sensitive data like passwords or credit card numbers due to the lack of encryption keys and security measures in place.\n\nIt's important to use a secure cryptographic library that follows best practices when handling sensitive information. This includes using strong encryption algorithms (like AES), generating random keys, and implementing proper key management protocols.",
+      "severity": "medium",
+      "cwe_ids": [
+        "CWE-327"
+      ],
+      "confidence": "medium",
+      "recommendation": "Use a secure cryptographic library that follows best practices when handling sensitive information, such as AES encryption with strong keys and proper key management protocols.",
+      "references": [
+        "https://owasp.org/www-project-benchmark/index.html",
+        "https://cheatsheetseries.owasp.org/",
+        "https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto.html"
+      ],
+      "model": "OWASP Benchmark"
+    },
+    {
+      "file_path": "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\nBenchmarkTest00010.java",
+      "line": 297,
+      "description": "Weak Randomness Test java.security.SecureRandom.nextInt(int) executed without any vulnerabilities found.",
+      "severity": "info",
+      "cwe_ids": [],
+      "confidence": "medium",
+      "recommendation": "No recommendation",
+      "references": [],
+      "model": "deepcode-7b-aurora-v13"
+    }
+  ]
+}
