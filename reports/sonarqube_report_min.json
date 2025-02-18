@@ -1,0 +1,6135 @@
+{
+  "total_issues": 12563,
+  "issues": [
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00001.java",
+      "line": 69,
+      "severity": "CRITICAL",
+      "rule": "java:S2093",
+      "message": "Change this \"try\" to a try-with-resources. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "java8",
+        "pitfall"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00001.java",
+      "line": 85,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00002.java",
+      "line": 69,
+      "severity": "CRITICAL",
+      "rule": "java:S2093",
+      "message": "Change this \"try\" to a try-with-resources. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "java8",
+        "pitfall"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00002.java",
+      "line": 79,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00002.java",
+      "line": 80,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00003.java",
+      "line": 94,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00003.java",
+      "line": 111,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00005.java",
+      "line": 55,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00005.java",
+      "line": 63,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use another cipher mode or disable padding.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00005.java",
+      "line": 63,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00005.java",
+      "line": 93,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00006.java",
+      "line": 52,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00006.java",
+      "line": 72,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00007.java",
+      "line": 64,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00007.java",
+      "line": 67,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00008.java",
+      "line": 57,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"CallableStatement\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00008.java",
+      "line": 64,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00009.java",
+      "line": 46,
+      "severity": "MINOR",
+      "rule": "java:S135",
+      "message": "Reduce the total number of break and continue statements in this loop to use at most one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00009.java",
+      "line": 47,
+      "severity": "MINOR",
+      "rule": "java:S1905",
+      "message": "Remove this unnecessary cast to \"String\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00009.java",
+      "line": 94,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00009.java",
+      "line": 111,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00009.java",
+      "line": 114,
+      "severity": "MINOR",
+      "rule": "java:S2147",
+      "message": "Combine this catch with the one at line 110, which has the same body. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00009.java",
+      "line": 115,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00010.java",
+      "line": 39,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00010.java",
+      "line": 44,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"param\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00010.java",
+      "line": 46,
+      "severity": "MINOR",
+      "rule": "java:S135",
+      "message": "Reduce the total number of break and continue statements in this loop to use at most one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00010.java",
+      "line": 47,
+      "severity": "MINOR",
+      "rule": "java:S1905",
+      "message": "Remove this unnecessary cast to \"String\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00010.java",
+      "line": 55,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"param\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00010.java",
+      "line": 81,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00010.java",
+      "line": 110,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00011.java",
+      "line": 54,
+      "severity": "MINOR",
+      "rule": "java:S1075",
+      "message": "Refactor your code to get this URI from a customizable parameter.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "android",
+        "cert"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00012.java",
+      "line": 71,
+      "severity": "MINOR",
+      "rule": "java:S1905",
+      "message": "Remove this unnecessary cast to \"SearchResult\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00012.java",
+      "line": 86,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00012.java",
+      "line": 102,
+      "severity": "CRITICAL",
+      "rule": "java:S1163",
+      "message": "Refactor this code to not throw exceptions in finally blocks.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "error-handling",
+        "suspicious"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00012.java",
+      "line": 102,
+      "severity": "CRITICAL",
+      "rule": "java:S1143",
+      "message": "Remove this throw statement from this finally block.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "error-handling"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00015.java",
+      "line": 54,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00015.java",
+      "line": 74,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00017.java",
+      "line": 66,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00017.java",
+      "line": 69,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00018.java",
+      "line": 59,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"count\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00018.java",
+      "line": 59,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"count\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00018.java",
+      "line": 64,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00019.java",
+      "line": 51,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use a secure cipher mode.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00019.java",
+      "line": 51,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00019.java",
+      "line": 79,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00020.java",
+      "line": 50,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00020.java",
+      "line": 59,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use another cipher mode or disable padding.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00020.java",
+      "line": 59,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00020.java",
+      "line": 88,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00020.java",
+      "line": 107,
+      "severity": "CRITICAL",
+      "rule": "java:S1192",
+      "message": "Define a constant instead of duplicating this literal \"Problem executing crypto - javax.crypto.Cipher.getInstance(java.lang.String,java.security.Provider) Test Case\" 7 times.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00021.java",
+      "line": 56,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00021.java",
+      "line": 62,
+      "severity": "MINOR",
+      "rule": "java:S1905",
+      "message": "Remove this unnecessary cast to \"SearchResult\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00021.java",
+      "line": 77,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00021.java",
+      "line": 93,
+      "severity": "CRITICAL",
+      "rule": "java:S1163",
+      "message": "Refactor this code to not throw exceptions in finally blocks.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "error-handling",
+        "suspicious"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00021.java",
+      "line": 93,
+      "severity": "CRITICAL",
+      "rule": "java:S1143",
+      "message": "Remove this throw statement from this finally block.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "error-handling"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00022.java",
+      "line": 71,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00022.java",
+      "line": 88,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00023.java",
+      "line": 45,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"param\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00023.java",
+      "line": 47,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00023.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00024.java",
+      "line": 53,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00024.java",
+      "line": 64,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00025.java",
+      "line": 50,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00025.java",
+      "line": 54,
+      "severity": "MINOR",
+      "rule": "java:S1153",
+      "message": "Directly append the argument of String.valueOf().",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00026.java",
+      "line": 53,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00026.java",
+      "line": 63,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00027.java",
+      "line": 52,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"count\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00027.java",
+      "line": 52,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"count\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00027.java",
+      "line": 57,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00028.java",
+      "line": 54,
+      "severity": "CRITICAL",
+      "rule": "java:S2093",
+      "message": "Change this \"try\" to a try-with-resources. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "java8",
+        "pitfall"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00028.java",
+      "line": 64,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00028.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00029.java",
+      "line": 79,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00029.java",
+      "line": 96,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00033.java",
+      "line": 57,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00033.java",
+      "line": 67,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00034.java",
+      "line": 61,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00035.java",
+      "line": 39,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00035.java",
+      "line": 48,
+      "severity": "MINOR",
+      "rule": "java:S1905",
+      "message": "Remove this unnecessary cast to \"String\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00035.java",
+      "line": 66,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use a secure cipher mode.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00035.java",
+      "line": 66,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00035.java",
+      "line": 94,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00036.java",
+      "line": 48,
+      "severity": "MINOR",
+      "rule": "java:S1905",
+      "message": "Remove this unnecessary cast to \"String\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00037.java",
+      "line": 39,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00037.java",
+      "line": 48,
+      "severity": "MINOR",
+      "rule": "java:S1905",
+      "message": "Remove this unnecessary cast to \"String\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00037.java",
+      "line": 67,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00037.java",
+      "line": 78,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00038.java",
+      "line": 39,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00038.java",
+      "line": 48,
+      "severity": "MINOR",
+      "rule": "java:S1905",
+      "message": "Remove this unnecessary cast to \"String\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00039.java",
+      "line": 39,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00039.java",
+      "line": 48,
+      "severity": "MINOR",
+      "rule": "java:S1905",
+      "message": "Remove this unnecessary cast to \"String\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00039.java",
+      "line": 68,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00039.java",
+      "line": 71,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00041.java",
+      "line": 51,
+      "severity": "MAJOR",
+      "rule": "java:S2589",
+      "message": "Remove this expression which always evaluates to \"true\"",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "redundant",
+        "suspicious"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00042.java",
+      "line": 47,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"param\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00042.java",
+      "line": 68,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00042.java",
+      "line": 97,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00043.java",
+      "line": 54,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"count\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00043.java",
+      "line": 54,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"count\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00043.java",
+      "line": 59,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00044.java",
+      "line": 57,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00044.java",
+      "line": 63,
+      "severity": "MINOR",
+      "rule": "java:S1905",
+      "message": "Remove this unnecessary cast to \"SearchResult\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00044.java",
+      "line": 78,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00044.java",
+      "line": 94,
+      "severity": "CRITICAL",
+      "rule": "java:S1163",
+      "message": "Refactor this code to not throw exceptions in finally blocks.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "error-handling",
+        "suspicious"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00044.java",
+      "line": 94,
+      "severity": "CRITICAL",
+      "rule": "java:S1143",
+      "message": "Remove this throw statement from this finally block.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "error-handling"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00045.java",
+      "line": 59,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00045.java",
+      "line": 69,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00046.java",
+      "line": 73,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00046.java",
+      "line": 90,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00047.java",
+      "line": 58,
+      "severity": "MAJOR",
+      "rule": "java:S2259",
+      "message": "A \"NullPointerException\" could be thrown; \"queryString\" is nullable here.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00048.java",
+      "line": 58,
+      "severity": "MAJOR",
+      "rule": "java:S2259",
+      "message": "A \"NullPointerException\" could be thrown; \"queryString\" is nullable here.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00049.java",
+      "line": 58,
+      "severity": "MAJOR",
+      "rule": "java:S2259",
+      "message": "A \"NullPointerException\" could be thrown; \"queryString\" is nullable here.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00050.java",
+      "line": 51,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00050.java",
+      "line": 60,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use another cipher mode or disable padding.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00050.java",
+      "line": 60,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00050.java",
+      "line": 89,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00050.java",
+      "line": 108,
+      "severity": "CRITICAL",
+      "rule": "java:S1192",
+      "message": "Define a constant instead of duplicating this literal \"Problem executing crypto - javax.crypto.Cipher.getInstance(java.lang.String,java.security.Provider) Test Case\" 7 times.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00051.java",
+      "line": 66,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00052.java",
+      "line": 54,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"CallableStatement\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00052.java",
+      "line": 64,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00053.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00053.java",
+      "line": 75,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00053.java",
+      "line": 85,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use another cipher mode or disable padding.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00053.java",
+      "line": 85,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00053.java",
+      "line": 115,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00053.java",
+      "line": 134,
+      "severity": "CRITICAL",
+      "rule": "java:S1192",
+      "message": "Define a constant instead of duplicating this literal \"Problem executing crypto - javax.crypto.Cipher.getInstance(java.lang.String,java.security.Provider) Test Case\" 6 times.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00054.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00054.java",
+      "line": 72,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00054.java",
+      "line": 112,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00054.java",
+      "line": 131,
+      "severity": "CRITICAL",
+      "rule": "java:S1192",
+      "message": "Define a constant instead of duplicating this literal \"Problem executing crypto - javax.crypto.Cipher.getInstance(java.lang.String) Test Case\" 6 times.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00055.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00055.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00055.java",
+      "line": 79,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use another cipher mode or disable padding.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00055.java",
+      "line": 79,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00055.java",
+      "line": 108,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00055.java",
+      "line": 127,
+      "severity": "CRITICAL",
+      "rule": "java:S1192",
+      "message": "Define a constant instead of duplicating this literal \"Problem executing crypto - javax.crypto.Cipher.getInstance(java.lang.String,java.security.Provider) Test Case\" 7 times.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00056.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00056.java",
+      "line": 67,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00056.java",
+      "line": 80,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00056.java",
+      "line": 89,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use another cipher mode or disable padding.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00056.java",
+      "line": 89,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00056.java",
+      "line": 118,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00056.java",
+      "line": 137,
+      "severity": "CRITICAL",
+      "rule": "java:S1192",
+      "message": "Define a constant instead of duplicating this literal \"Problem executing crypto - javax.crypto.Cipher.getInstance(java.lang.String,java.security.Provider) Test Case\" 7 times.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00057.java",
+      "line": 75,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00057.java",
+      "line": 83,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use another cipher mode or disable padding.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00057.java",
+      "line": 83,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00057.java",
+      "line": 113,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00058.java",
+      "line": 101,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00059.java",
+      "line": 71,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00059.java",
+      "line": 83,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use a secure cipher mode.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00059.java",
+      "line": 111,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00060.java",
+      "line": 68,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00061.java",
+      "line": 68,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00061.java",
+      "line": 74,
+      "severity": "MINOR",
+      "rule": "java:S1075",
+      "message": "Refactor your code to get this URI from a customizable parameter.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "android",
+        "cert"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00062.java",
+      "line": 66,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00062.java",
+      "line": 75,
+      "severity": "CRITICAL",
+      "rule": "java:S2093",
+      "message": "Change this \"try\" to a try-with-resources. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "java8",
+        "pitfall"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00062.java",
+      "line": 91,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00063.java",
+      "line": 75,
+      "severity": "CRITICAL",
+      "rule": "java:S2093",
+      "message": "Change this \"try\" to a try-with-resources. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "java8",
+        "pitfall"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00063.java",
+      "line": 91,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00064.java",
+      "line": 75,
+      "severity": "CRITICAL",
+      "rule": "java:S2093",
+      "message": "Change this \"try\" to a try-with-resources. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "java8",
+        "pitfall"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00064.java",
+      "line": 85,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00064.java",
+      "line": 86,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00065.java",
+      "line": 68,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00065.java",
+      "line": 91,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00066.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00066.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00066.java",
+      "line": 69,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00066.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00066.java",
+      "line": 90,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00067.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00067.java",
+      "line": 73,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00067.java",
+      "line": 78,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00067.java",
+      "line": 82,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"f71153\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00067.java",
+      "line": 82,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"f71153\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00067.java",
+      "line": 86,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00067.java",
+      "line": 86,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00067.java",
+      "line": 106,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00068.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00068.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00068.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00068.java",
+      "line": 90,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00069.java",
+      "line": 104,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00069.java",
+      "line": 121,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00069.java",
+      "line": 124,
+      "severity": "MINOR",
+      "rule": "java:S2147",
+      "message": "Combine this catch with the one at line 120, which has the same body. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00069.java",
+      "line": 125,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00070.java",
+      "line": 96,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00070.java",
+      "line": 113,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00070.java",
+      "line": 116,
+      "severity": "MINOR",
+      "rule": "java:S2147",
+      "message": "Combine this catch with the one at line 112, which has the same body. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00070.java",
+      "line": 117,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00071.java",
+      "line": 96,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00071.java",
+      "line": 113,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00071.java",
+      "line": 116,
+      "severity": "MINOR",
+      "rule": "java:S2147",
+      "message": "Combine this catch with the one at line 112, which has the same body. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00071.java",
+      "line": 117,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00072.java",
+      "line": 94,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00072.java",
+      "line": 111,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00072.java",
+      "line": 114,
+      "severity": "MINOR",
+      "rule": "java:S2147",
+      "message": "Combine this catch with the one at line 110, which has the same body. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00072.java",
+      "line": 115,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00073.java",
+      "line": 110,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00073.java",
+      "line": 127,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00074.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00074.java",
+      "line": 66,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00074.java",
+      "line": 100,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00074.java",
+      "line": 117,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00075.java",
+      "line": 100,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00075.java",
+      "line": 117,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00076.java",
+      "line": 114,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00076.java",
+      "line": 131,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00077.java",
+      "line": 86,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00077.java",
+      "line": 104,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00078.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00078.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00078.java",
+      "line": 67,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00078.java",
+      "line": 68,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00078.java",
+      "line": 74,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00078.java",
+      "line": 92,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00079.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00079.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00079.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00079.java",
+      "line": 66,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00079.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00079.java",
+      "line": 72,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00079.java",
+      "line": 90,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00080.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00080.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00080.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00080.java",
+      "line": 67,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00080.java",
+      "line": 85,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00081.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00081.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00081.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00081.java",
+      "line": 67,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00081.java",
+      "line": 85,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00082.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00082.java",
+      "line": 66,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00082.java",
+      "line": 66,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00082.java",
+      "line": 68,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00082.java",
+      "line": 86,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00083.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00083.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00083.java",
+      "line": 69,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00083.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00083.java",
+      "line": 72,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00083.java",
+      "line": 90,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00084.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00084.java",
+      "line": 67,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00084.java",
+      "line": 67,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00084.java",
+      "line": 69,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00084.java",
+      "line": 87,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00085.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00085.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00085.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00085.java",
+      "line": 66,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00085.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00085.java",
+      "line": 72,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00085.java",
+      "line": 90,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00086.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00086.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00086.java",
+      "line": 69,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00086.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00086.java",
+      "line": 72,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00086.java",
+      "line": 90,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00087.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00087.java",
+      "line": 67,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00087.java",
+      "line": 68,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00088.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00088.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00089.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00089.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00090.java",
+      "line": 84,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00090.java",
+      "line": 87,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00091.java",
+      "line": 79,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00091.java",
+      "line": 82,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00092.java",
+      "line": 98,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00092.java",
+      "line": 101,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00093.java",
+      "line": 67,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00093.java",
+      "line": 90,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00093.java",
+      "line": 93,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00094.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00094.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00094.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00094.java",
+      "line": 66,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00094.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00094.java",
+      "line": 71,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00094.java",
+      "line": 94,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00094.java",
+      "line": 124,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00095.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00095.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00095.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00095.java",
+      "line": 66,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00095.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00095.java",
+      "line": 92,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00095.java",
+      "line": 121,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00096.java",
+      "line": 49,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00096.java",
+      "line": 65,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00096.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00096.java",
+      "line": 91,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00096.java",
+      "line": 120,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00099.java",
+      "line": 67,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00100.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00100.java",
+      "line": 66,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00100.java",
+      "line": 78,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00100.java",
+      "line": 89,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00101.java",
+      "line": 67,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00101.java",
+      "line": 83,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00101.java",
+      "line": 90,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00102.java",
+      "line": 76,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00102.java",
+      "line": 79,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00103.java",
+      "line": 80,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00103.java",
+      "line": 83,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00105.java",
+      "line": 83,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00106.java",
+      "line": 67,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00106.java",
+      "line": 87,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00107.java",
+      "line": 73,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00107.java",
+      "line": 78,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00107.java",
+      "line": 82,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"f18521\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00107.java",
+      "line": 82,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"f18521\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00107.java",
+      "line": 98,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00108.java",
+      "line": 96,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00109.java",
+      "line": 68,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00109.java",
+      "line": 84,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00110.java",
+      "line": 73,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00110.java",
+      "line": 78,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00110.java",
+      "line": 82,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"f69840\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00110.java",
+      "line": 82,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"f69840\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00110.java",
+      "line": 98,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00111.java",
+      "line": 67,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00111.java",
+      "line": 82,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"count\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00111.java",
+      "line": 82,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"count\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00111.java",
+      "line": 87,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00112.java",
+      "line": 74,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"count\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00112.java",
+      "line": 74,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"count\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00112.java",
+      "line": 79,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00113.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00113.java",
+      "line": 66,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00113.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00113.java",
+      "line": 78,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"count\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00113.java",
+      "line": 78,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"count\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00113.java",
+      "line": 83,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00114.java",
+      "line": 77,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"count\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00114.java",
+      "line": 77,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"count\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00114.java",
+      "line": 82,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00115.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00115.java",
+      "line": 66,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00115.java",
+      "line": 77,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"count\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00115.java",
+      "line": 77,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"count\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00115.java",
+      "line": 82,
+      "severity": "MINOR",
+      "rule": "java:S3626",
+      "message": "Remove this redundant jump.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00116.java",
+      "line": 65,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00116.java",
+      "line": 66,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00116.java",
+      "line": 70,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00119.java",
+      "line": 59,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00119.java",
+      "line": 64,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00119.java",
+      "line": 76,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00119.java",
+      "line": 86,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use another cipher mode or disable padding.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00119.java",
+      "line": 86,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00119.java",
+      "line": 116,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00119.java",
+      "line": 135,
+      "severity": "CRITICAL",
+      "rule": "java:S1192",
+      "message": "Define a constant instead of duplicating this literal \"Problem executing crypto - javax.crypto.Cipher.getInstance(java.lang.String,java.security.Provider) Test Case\" 6 times.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00120.java",
+      "line": 60,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00120.java",
+      "line": 70,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use another cipher mode or disable padding.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00120.java",
+      "line": 70,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00120.java",
+      "line": 100,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00120.java",
+      "line": 119,
+      "severity": "CRITICAL",
+      "rule": "java:S1192",
+      "message": "Define a constant instead of duplicating this literal \"Problem executing crypto - javax.crypto.Cipher.getInstance(java.lang.String,java.security.Provider) Test Case\" 6 times.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00121.java",
+      "line": 53,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00121.java",
+      "line": 68,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00121.java",
+      "line": 108,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00121.java",
+      "line": 127,
+      "severity": "CRITICAL",
+      "rule": "java:S1192",
+      "message": "Define a constant instead of duplicating this literal \"Problem executing crypto - javax.crypto.Cipher.getInstance(java.lang.String) Test Case\" 6 times.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00122.java",
+      "line": 58,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00122.java",
+      "line": 98,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00122.java",
+      "line": 117,
+      "severity": "CRITICAL",
+      "rule": "java:S1192",
+      "message": "Define a constant instead of duplicating this literal \"Problem executing crypto - javax.crypto.Cipher.getInstance(java.lang.String) Test Case\" 6 times.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00123.java",
+      "line": 56,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00123.java",
+      "line": 64,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use another cipher mode or disable padding.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00123.java",
+      "line": 64,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00123.java",
+      "line": 94,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00124.java",
+      "line": 61,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00124.java",
+      "line": 69,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use another cipher mode or disable padding.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00124.java",
+      "line": 69,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00124.java",
+      "line": 99,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00125.java",
+      "line": 56,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00125.java",
+      "line": 64,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use another cipher mode or disable padding.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00125.java",
+      "line": 64,
+      "severity": "CRITICAL",
+      "rule": "java:S5547",
+      "message": "Use a strong cipher algorithm.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00125.java",
+      "line": 94,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00126.java",
+      "line": 53,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00126.java",
+      "line": 97,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00127.java",
+      "line": 53,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00127.java",
+      "line": 66,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00127.java",
+      "line": 78,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use a secure cipher mode.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00127.java",
+      "line": 106,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00128.java",
+      "line": 61,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00128.java",
+      "line": 73,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use a secure cipher mode.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00128.java",
+      "line": 101,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00129.java",
+      "line": 56,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00129.java",
+      "line": 68,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use a secure cipher mode.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00129.java",
+      "line": 96,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00130.java",
+      "line": 75,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00130.java",
+      "line": 87,
+      "severity": "CRITICAL",
+      "rule": "java:S5542",
+      "message": "Use a secure cipher mode.",
+      "type": "VULNERABILITY",
+      "tags": [
+        "cwe",
+        "owasp-a3",
+        "owasp-a6",
+        "owasp-m5",
+        "privacy",
+        "sans-top25-porous"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00130.java",
+      "line": 115,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00132.java",
+      "line": 75,
+      "severity": "CRITICAL",
+      "rule": "java:S2093",
+      "message": "Change this \"try\" to a try-with-resources. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "java8",
+        "pitfall"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00132.java",
+      "line": 91,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00133.java",
+      "line": 61,
+      "severity": "CRITICAL",
+      "rule": "java:S2093",
+      "message": "Change this \"try\" to a try-with-resources. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "java8",
+        "pitfall"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00133.java",
+      "line": 74,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00133.java",
+      "line": 75,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00134.java",
+      "line": 53,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00134.java",
+      "line": 72,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00134.java",
+      "line": 82,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00135.java",
+      "line": 81,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00135.java",
+      "line": 91,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00136.java",
+      "line": 75,
+      "severity": "CRITICAL",
+      "rule": "java:S2093",
+      "message": "Change this \"try\" to a try-with-resources. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "java8",
+        "pitfall"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00136.java",
+      "line": 85,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00136.java",
+      "line": 86,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00137.java",
+      "line": 52,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00137.java",
+      "line": 76,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00138.java",
+      "line": 75,
+      "severity": "MINOR",
+      "rule": "java:S1905",
+      "message": "Remove this unnecessary cast to \"SearchResult\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00138.java",
+      "line": 90,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00138.java",
+      "line": 106,
+      "severity": "CRITICAL",
+      "rule": "java:S1163",
+      "message": "Refactor this code to not throw exceptions in finally blocks.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "error-handling",
+        "suspicious"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00138.java",
+      "line": 106,
+      "severity": "CRITICAL",
+      "rule": "java:S1143",
+      "message": "Remove this throw statement from this finally block.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "error-handling"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00139.java",
+      "line": 59,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00139.java",
+      "line": 64,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00139.java",
+      "line": 68,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"f48394\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00139.java",
+      "line": 91,
+      "severity": "MINOR",
+      "rule": "java:S1905",
+      "message": "Remove this unnecessary cast to \"SearchResult\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00139.java",
+      "line": 106,
+      "severity": "MAJOR",
+      "rule": "java:S125",
+      "message": "This block of commented-out lines of code should be removed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00139.java",
+      "line": 122,
+      "severity": "CRITICAL",
+      "rule": "java:S1163",
+      "message": "Refactor this code to not throw exceptions in finally blocks.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "error-handling",
+        "suspicious"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00139.java",
+      "line": 122,
+      "severity": "CRITICAL",
+      "rule": "java:S1143",
+      "message": "Remove this throw statement from this finally block.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "error-handling"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00140.java",
+      "line": 51,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00140.java",
+      "line": 53,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00140.java",
+      "line": 60,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00140.java",
+      "line": 81,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00141.java",
+      "line": 90,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00141.java",
+      "line": 107,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00141.java",
+      "line": 110,
+      "severity": "MINOR",
+      "rule": "java:S2147",
+      "message": "Combine this catch with the one at line 106, which has the same body. (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00141.java",
+      "line": 111,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00142.java",
+      "line": 82,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00142.java",
+      "line": 99,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00143.java",
+      "line": 100,
+      "severity": "BLOCKER",
+      "rule": "java:S2095",
+      "message": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+      "type": "BUG",
+      "tags": [
+        "cert",
+        "cwe",
+        "denial-of-service",
+        "leak"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00143.java",
+      "line": 117,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00144.java",
+      "line": 53,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00145.java",
+      "line": 51,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00145.java",
+      "line": 52,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00147.java",
+      "line": 53,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00151.java",
+      "line": 53,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00153.java",
+      "line": 51,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00153.java",
+      "line": 52,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00156.java",
+      "line": 53,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00158.java",
+      "line": 58,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00158.java",
+      "line": 76,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00159.java",
+      "line": 73,
+      "severity": "MAJOR",
+      "rule": "java:S106",
+      "message": "Replace this use of System.out or System.err by a logger.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "bad-practice",
+        "cert",
+        "owasp-a3"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00160.java",
+      "line": 51,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00160.java",
+      "line": 53,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00160.java",
+      "line": 54,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00160.java",
+      "line": 61,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00160.java",
+      "line": 79,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00161.java",
+      "line": 51,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00161.java",
+      "line": 51,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00161.java",
+      "line": 52,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00161.java",
+      "line": 56,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00161.java",
+      "line": 57,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00161.java",
+      "line": 59,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00161.java",
+      "line": 77,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00162.java",
+      "line": 51,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00162.java",
+      "line": 51,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00162.java",
+      "line": 53,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00162.java",
+      "line": 71,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00163.java",
+      "line": 52,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00163.java",
+      "line": 52,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00163.java",
+      "line": 54,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00163.java",
+      "line": 72,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00164.java",
+      "line": 39,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00164.java",
+      "line": 51,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00164.java",
+      "line": 55,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00164.java",
+      "line": 56,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00164.java",
+      "line": 58,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00164.java",
+      "line": 76,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00165.java",
+      "line": 39,
+      "severity": "CRITICAL",
+      "rule": "java:S3776",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "brain-overload"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00165.java",
+      "line": 51,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00165.java",
+      "line": 51,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00165.java",
+      "line": 53,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00165.java",
+      "line": 56,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00165.java",
+      "line": 74,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00166.java",
+      "line": 51,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00166.java",
+      "line": 51,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00166.java",
+      "line": 53,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00166.java",
+      "line": 71,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00167.java",
+      "line": 51,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00167.java",
+      "line": 53,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00167.java",
+      "line": 54,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00167.java",
+      "line": 60,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00167.java",
+      "line": 78,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00168.java",
+      "line": 51,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00168.java",
+      "line": 56,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00168.java",
+      "line": 58,
+      "severity": "CRITICAL",
+      "rule": "java:S2119",
+      "message": "Save and re-use this \"Random\".",
+      "type": "BUG",
+      "tags": [
+        "owasp-a6"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00168.java",
+      "line": 76,
+      "severity": "MAJOR",
+      "rule": "java:S1066",
+      "message": "Merge this if statement with the enclosing one.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00169.java",
+      "line": 51,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00169.java",
+      "line": 51,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00169.java",
+      "line": 53,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00169.java",
+      "line": 60,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00170.java",
+      "line": 59,
+      "severity": "MINOR",
+      "rule": "java:S2293",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\"). (sonar.java.source not set. Assuming 7 or greater.)",
+      "type": "CODE_SMELL",
+      "tags": [
+        "clumsy"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00170.java",
+      "line": 64,
+      "severity": "MAJOR",
+      "rule": "java:S2129",
+      "message": "Remove this \"String\" constructor",
+      "type": "CODE_SMELL",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00170.java",
+      "line": 68,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"f9823\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00170.java",
+      "line": 68,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"f9823\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00170.java",
+      "line": 72,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00170.java",
+      "line": 72,
+      "severity": "MINOR",
+      "rule": "java:S1481",
+      "message": "Remove this unused \"bar\" local variable.",
+      "type": "CODE_SMELL",
+      "tags": [
+        "unused"
+      ]
+    },
+    {
+      "file": "llm4sast:src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00171.java",
+      "line": 51,
+      "severity": "MAJOR",
+      "rule": "java:S1854",
+      "message": "Remove this useless assignment to local variable \"bar\".",
+      "type": "CODE_SMELL",
+      "tags": [
+        "cert",
+        "cwe",
+        "unused"
+      ]
+    }
+  ]
+}

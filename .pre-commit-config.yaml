@@ -27,7 +27,7 @@ repos:
       # 4) Export SonarQube JSON
       - id: sonarqube_export
         name: Export SonarQube JSON
-        entry: docker compose --env-file .env run --rm sonarqube-export
+        entry: docker run --rm -v "$(pwd)/reports:/reports" curlimages/curl:latest -v -u "sqp_2577b60b9153d2bfddc3571e74b2cbc513298810" "http://host.docker.internal:9000/api/issues/search?componentKeys=llm4sast&types=VULNERABILITY,BUG,CODE_SMELL&ps=500" -o /reports/sonarqube_report.jso
         language: system
         pass_filenames: false
 

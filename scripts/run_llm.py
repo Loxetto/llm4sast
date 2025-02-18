@@ -29,15 +29,15 @@ ALL_AVAILABLE_MODELS = {
     "llama3B":   "llama-3.2-3b-instruct"
 }
 
-CODE_DIR = "../src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low"
+CODE_DIR = "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp"
 
 # Where partial/final files are stored
 PARTIAL_PREFIX = "partial_findings_"
 FINAL_JSON_PATH = "final_report.json"
 
 # SAST file paths
-SEM_GREP_REPORT_PATH = "reports/semgrep_report.json"
-SONARQUBE_REPORT_PATH = "reports/sonarqube_report.json"
+SEM_GREP_REPORT_PATH = "./reports/semgrep_report.json"
+SONARQUBE_REPORT_PATH = "./reports/sonarqube_report.json"
 
 # Token constraints
 MAX_TOKENS = 4096
@@ -196,7 +196,7 @@ If no vulnerabilities, just output {{ "findings": [] }}.
 Here is the JSON schema (shortened):
 {schema_snippet}
 
-We also have some SAST tool reports (semgrep & sonarqube):
+We also have some SAST tool reports (semgrep & sonarqube), can help you using the to detect vulenarabilities and lower the false positive, SO BE CAREFUL:
 SAST REPORTS:
 {sast_json_str}
 
@@ -299,7 +299,7 @@ def unify_and_finalize(models_chosen: list, total_files_scanned: int):
 # -------------------------------------------------------------------------
 def main():
     parser = argparse.ArgumentParser(description="Scan code with chosen LLM models + SAST data.")
-    parser.add_argument("--models", type=str, default="deepcode,deepseek",
+    parser.add_argument("--models", type=str, default="meta-llama-3.1-8b-instruct",
                         help="Comma-separated list of model keys to use (e.g. deepcode,deepseek,starcoder,llama8B,llama3B).")
     args = parser.parse_args()
 

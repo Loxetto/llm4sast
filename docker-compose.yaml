@@ -41,7 +41,7 @@ services:
     working_dir: /src
     command: >
       semgrep scan --config auto --json --output reports/semgrep_report.json
-      src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low
+      src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp
 
   sonarscanner:
     image: sonarsource/sonar-scanner-cli:latest
@@ -60,33 +60,19 @@ services:
     tty: true
     entrypoint: ["/bin/sh", "-c"]
     command: >
-     echo "Waiting for SonarQube to be UP..." &&
-     until curl -s http://sonarqube:9000/api/system/status | grep -q "UP"; do
-       sleep 5;
-     done &&
      echo "SonarQube is UP. Starting scanner..." &&
      sonar-scanner
 
 
   sonarqube-export:
-   image: curlimages/curl:latest
-   container_name: sonarqube-export
-   depends_on:
-    - sonarqube
-   volumes:
-    - ./reports:/reports
-   environment:
-    SONAR_LOGIN: ${SONAR_LOGIN}
-    SONAR_HOST_URL: ${SONAR_HOST_URL}
-    SONAR_PROJECT_KEY: ${SONAR_PROJECT_KEY}
-   entrypoint: ["/bin/sh", "-c"]
-   command: >
-    echo 'Exporting SonarQube issues to JSON...' &&
-    until curl -s http://sonarqube:9000/api/system/status | grep -q "UP"; do sleep 5; done &&
-    echo 'SonarQube is UP. Exporting issues...' &&
-    curl -v -u ${SONAR_LOGIN}: "${SONAR_HOST_URL}/api/issues/search?componentKeys=${SONAR_PROJECT_KEY}&types=VULNERABILITY,BUG,CODE_SMELL&ps=500" -o /reports/sonarqube_report.json &&
-    echo 'Export complete. Contents of report:' &&
-    cat /reports/sonarqube_report.json
+    image: curlimages/curl:latest
+    container_name: sonarqube-export
+    volumes:
+      - ./reports:/reports
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      curl -v -u "sqp_2577b60b9153d2bfddc3571e74b2cbc513298810" "http://host.docker.internal:9000/api/issues/search?componentKeys=llm4sast&types=VULNERABILITY,BUG,CODE_SMELL&ps=500" -o /reports/sonarqube_report.jso
+
 
   pre-commit:
     image: python:3.9
@@ -105,3 +91,4 @@ volumes:
   sonarqube_data:
   sonarqube_extensions:
   db_data:
+  semgrep_rules:

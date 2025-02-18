@@ -29,7 +29,8 @@ ALL_AVAILABLE_MODELS = {
     "starcoder": "dolphincoder-starcoder2-7b",
     "starcoder2-7b": "starcoder2-7b",
     "llama8B":   "meta-llama-3.1-8b-instruct",
-    "llama3B":   "llama-3.2-3b-instruct"
+    "llama3B":   "llama-3.2-3b-instruct",
+    "baby-grok":   "baby_grok3-1.5b"
 }
 
 # The code directory to scan
