@@ -1,0 +1,9 @@
+{
+  "total_files_scanned": 2740,
+  "total_vulnerabilities": 2681,
+  "total_affected_files": 1833,
+  "vulnerabilities_by_type": {
+    "Unknown": 2681
+  },
+  "execution_time_seconds": 13750.630526781082
+}

@@ -1,0 +1,82 @@
+{
+  "Path Traversal": {
+    "TP": 2,
+    "FP": 0,
+    "FN": 0,
+    "TN": 0,
+    "TP_percent": 100.0,
+    "FP_percent": 0.0,
+    "FN_percent": 0.0,
+    "TN_percent": 0.0
+  },
+  "Weak Encryption": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 1,
+    "TN": 0,
+    "TP_percent": 0.0,
+    "FP_percent": 0.0,
+    "FN_percent": 100.0,
+    "TN_percent": 0.0
+  },
+  "Cross Site Scripting": {
+    "TP": 0,
+    "FP": 5,
+    "FN": 0,
+    "TN": 0,
+    "TP_percent": 0.0,
+    "FP_percent": 100.0,
+    "FN_percent": 0.0,
+    "TN_percent": 0.0
+  },
+  "Weak Randomness": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 0,
+    "TN": 1,
+    "TP_percent": 0.0,
+    "FP_percent": 0.0,
+    "FN_percent": 0.0,
+    "TN_percent": 100.0
+  },
+  "Weak Hashing": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 1,
+    "TN": 1,
+    "TP_percent": 0.0,
+    "FP_percent": 0.0,
+    "FN_percent": 50.0,
+    "TN_percent": 50.0
+  },
+  "Command Injection": {
+    "TP": 2,
+    "FP": 0,
+    "FN": 0,
+    "TN": 0,
+    "TP_percent": 100.0,
+    "FP_percent": 0.0,
+    "FN_percent": 0.0,
+    "TN_percent": 0.0
+  },
+  "Trust Boundary": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 1,
+    "TN": 0,
+    "TP_percent": 0.0,
+    "FP_percent": 0.0,
+    "FN_percent": 100.0,
+    "TN_percent": 0.0
+  },
+  "SQL Injection": {
+    "TP": 1,
+    "FP": 0,
+    "FN": 0,
+    "TN": 0,
+    "TP_percent": 100.0,
+    "FP_percent": 0.0,
+    "FN_percent": 0.0,
+    "TN_percent": 0.0
+  }
+}

@@ -1,0 +1,498 @@
+{
+  "findings": [
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00001.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+          "line": 83,
+          "description": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files.",
+          "vulnerability_type": "Path Traversal",
+          "severity": "high",
+          "cwe_ids": [
+            "CWE-22"
+          ],
+          "confidence": "high",
+          "recommendation": "Validate and sanitize any input that is used to create references to file paths. Also, enforce strict file access controls."
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00002.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+          "line": 83,
+          "description": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files.",
+          "vulnerability_type": "Path Traversal",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+          "line": 83,
+          "description": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files.",
+          "vulnerability_type": "Path Traversal",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+          "line": 83,
+          "description": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files.",
+          "vulnerability_type": "Path Traversal",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+          "line": 83,
+          "description": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files.",
+          "vulnerability_type": "Path Traversal",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00003.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00003.java",
+          "line": 94,
+          "description": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high",
+          "confidence": "medium",
+          "references": [
+            "https://owasp.org/www-project-benchmark/"
+          ]
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00003.java",
+          "line": 111,
+          "description": "Replace this use of System.out or System.err by a logger.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "medium",
+          "confidence": "low",
+          "references": [
+            "https://owasp.org/www-project-benchmark/"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00004.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00004.java",
+          "line": 55,
+          "description": "The application does not appear to verify inbound requests which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application uses cookie-based authentication, an attacker can trick users into sending authenticated HTTP requests without their knowledge from any arbitrary domain they visit.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00004.java",
+          "line": 55,
+          "description": "Mixing trusted and untrusted data within the same structure can lead to trust boundary violations, where unvalidated data is mistakenly trusted, potentially bypassing security mechanisms.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00004.java",
+          "line": 55,
+          "description": "Detected input from a HTTPServletRequest going into a session command, like `setAttribute`. User input into such a command could lead to an attacker inputting malicious code into your session parameters, blurring the line between what's trusted and untrusted, and therefore leading to a trust boundary violation.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00004.java",
+          "line": 55,
+          "description": "Detected a request with potential user-input going into a OutputStream or Writer object. This bypasses any view or template environments, including HTML escaping, which may expose this application to cross-site scripting (XSS) vulnerabilities.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00005.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00005.java",
+          "line": 63,
+          "description": "The DES encryption algorithm is considered insecure and should be replaced with a more secure alternative.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high",
+          "confidence": "medium",
+          "recommendation": "Use AES instead of DES for encryption."
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00006.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00006.java",
+          "line": 54,
+          "description": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system.",
+          "vulnerability_type": "Command Injection",
+          "severity": "high",
+          "confidence": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00006.java",
+          "line": 54,
+          "description": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system.",
+          "vulnerability_type": "Command Injection",
+          "severity": "high",
+          "confidence": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00006.java",
+          "line": 54,
+          "description": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system.",
+          "vulnerability_type": "Command Injection",
+          "severity": "high",
+          "confidence": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00006.java",
+          "line": 54,
+          "description": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system.",
+          "vulnerability_type": "Command Injection",
+          "severity": "high",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00007.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00007.java",
+          "line": 67,
+          "description": "Detected input from a HTTPServletRequest going into a 'ProcessBuilder' or 'exec' command. This could lead to command injection if variables passed into the exec commands are not properly sanitized. Instead, avoid using these OS commands with user-supplied input, or, if you must use these commands, use a whitelist of specific values.",
+          "vulnerability_type": "Command Injection",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00007.java",
+          "line": 67,
+          "description": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system.",
+          "vulnerability_type": "Command Injection",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00008.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00008.java",
+          "line": 57,
+          "description": "Input from a HTTPServletRequest going into a SQL sink or statement. This could lead to SQL injection if variables in the SQL statement are not properly sanitized.",
+          "vulnerability_type": "SQL Injection",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00009.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00009.java",
+          "line": 94,
+          "description": "The FileWriter is not closed properly in a finally block to prevent resource leaks.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00010.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00010.java",
+          "line": 81,
+          "description": "The application does not appear to verify inbound requests which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application uses cookie-based authentication, an attacker can trick users into sending authenticated HTTP requests without their knowledge from any arbitrary domain they visit. To prevent this vulnerability start by identifying if the framework or library leveraged has built-in features or offers plugins for CSRF protection. CSRF tokens should be unique and securely random. The `Synchronizer Token` or `Double Submit Cookie` patterns with defense-in-depth mechanisms such as the `sameSite` cookie flag can help prevent CSRF. For more information, see: [Cross-site request forgery prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high",
+          "cwe_ids": [
+            "CWE-352"
+          ]
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00010.java",
+          "line": 110,
+          "description": "The application does not appear to verify inbound requests which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application uses cookie-based authentication, an attacker can trick users into sending authenticated HTTP requests without their knowledge from any arbitrary domain they visit. To prevent this vulnerability start by identifying if the framework or library leveraged has built-in features or offers plugins for CSRF protection. CSRF tokens should be unique and securely random. The `Synchronizer Token` or `Double Submit Cookie` patterns with defense-in-depth mechanisms such as the `sameSite` cookie flag can help prevent CSRF. For more information, see: [Cross-site request forgery prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high",
+          "cwe_ids": [
+            "CWE-352"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00001.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+          "line": 85,
+          "description": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the file path which the application uses to access files.",
+          "vulnerability_type": "Path Traversal",
+          "severity": "high",
+          "cwe_ids": [
+            "CWE-22"
+          ],
+          "references": [
+            "https://owasp.org/www-project-benchmark/"
+          ]
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+          "line": 85,
+          "description": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the file path which the application uses to access files.",
+          "vulnerability_type": "Path Traversal",
+          "severity": "high",
+          "cwe_ids": [
+            "CWE-22"
+          ],
+          "references": [
+            "https://owasp.org/www-project-benchmark/"
+          ]
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+          "line": 85,
+          "description": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the file path which the application uses to access files.",
+          "vulnerability_type": "Path Traversal",
+          "severity": "high",
+          "cwe_ids": [
+            "CWE-22"
+          ],
+          "references": [
+            "https://owasp.org/www-project-benchmark/"
+          ]
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00001.java",
+          "line": 85,
+          "description": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the file path which the application uses to access files.",
+          "vulnerability_type": "Path Traversal",
+          "severity": "high",
+          "cwe_ids": [
+            "CWE-22"
+          ],
+          "references": [
+            "https://owasp.org/www-project-benchmark/"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00002.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+          "line": 69,
+          "description": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files.",
+          "vulnerability_type": "Path Traversal",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00002.java",
+          "line": 80,
+          "description": "The application builds a file path from potentially untrusted data, which can lead to a path traversal vulnerability. An attacker can manipulate the path which the application uses to access files. If the application does not validate user input and sanitize file paths, sensitive files such as configuration or user data can be accessed, potentially creating or overwriting files.",
+          "vulnerability_type": "Path Traversal",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00003.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00003.java",
+          "line": 94,
+          "description": "Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high",
+          "confidence": "medium",
+          "recommendation": "Use try-with-resources to automatically close the FileWriter."
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00003.java",
+          "line": 111,
+          "description": "Replace this use of System.out or System.err by a logger.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "medium",
+          "confidence": "low",
+          "recommendation": "Use a logging framework to handle error messages."
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00004.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00004.java",
+          "line": 55,
+          "description": "The application does not appear to verify inbound requests which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application uses cookie-based authentication, an attacker can trick users into sending authenticated HTTP requests without their knowledge from any arbitrary domain they visit.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00004.java",
+          "line": 55,
+          "description": "The application does not appear to verify inbound requests which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application uses cookie-based authentication, an attacker can trick users into sending authenticated HTTP requests without their knowledge from any arbitrary domain they visit.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00004.java",
+          "line": 55,
+          "description": "Mixing trusted and untrusted data within the same structure can lead to trust boundary violations, where unvalidated data is mistakenly trusted, potentially bypassing security mechanisms.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00004.java",
+          "line": 55,
+          "description": "Detected input from a HTTPServletRequest going into a session command, like `setAttribute`. User input into such a command could lead to an attacker inputting malicious code into your session parameters, blurring the line between what's trusted and untrusted, and therefore leading to a trust boundary violation.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00005.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00005.java",
+          "line": 63,
+          "description": "The DES encryption algorithm is considered insecure and should be avoided.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high",
+          "cwe_ids": [
+            "CWE-326"
+          ]
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00005.java",
+          "line": 93,
+          "description": "The FileWriter is not properly closed, which can lead to resource leaks.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high",
+          "cwe_ids": [
+            "CWE-489"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00006.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00006.java",
+          "line": 72,
+          "description": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system.",
+          "vulnerability_type": "Command Injection",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00006.java",
+          "line": 72,
+          "description": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system.",
+          "vulnerability_type": "Command Injection",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00006.java",
+          "line": 72,
+          "description": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system.",
+          "vulnerability_type": "Command Injection",
+          "severity": "high"
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00006.java",
+          "line": 72,
+          "description": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system.",
+          "vulnerability_type": "Command Injection",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00007.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00007.java",
+          "line": 67,
+          "description": "Detected input from a HTTPServletRequest going into a 'ProcessBuilder' or 'exec' command. This could lead to command injection if variables passed into the exec commands are not properly sanitized. Instead, avoid using these OS commands with user-supplied input, or, if you must use these commands, use a whitelist of specific values.",
+          "vulnerability_type": "Command Injection",
+          "severity": "high",
+          "confidence": "high",
+          "recommendation": "Avoid using 'ProcessBuilder' or 'exec' with user-supplied input. If necessary, sanitize the input and use a whitelist of allowed values."
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_tmp/BenchmarkTest00007.java",
+          "line": 67,
+          "description": "Untrusted input might be injected into a command executed by the application, which can lead to a command injection vulnerability. An attacker can execute arbitrary commands, potentially gaining complete control of the system.",
+          "vulnerability_type": "Command Injection",
+          "severity": "high",
+          "confidence": "high",
+          "recommendation": "Avoid using 'ProcessBuilder' or 'exec' with user-supplied input. If necessary, sanitize the input and use a whitelist of allowed values."
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00008.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00008.java",
+          "line": 64,
+          "description": "The code is vulnerable to SQL injection because it directly uses user input in a SQL query without proper sanitization.",
+          "vulnerability_type": "SQL Injection",
+          "severity": "high",
+          "confidence": "medium",
+          "recommendation": "Use parameterized queries or prepared statements instead of concatenating user input into the SQL query."
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00009.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00009.java",
+          "line": 94,
+          "description": "The FileWriter object is not closed after use, which can lead to resource leaks and other issues.",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "file": "./src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low\\BenchmarkTest00010.java",
+      "findings": [
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00010.java",
+          "line": 81,
+          "description": "The application does not appear to verify inbound requests which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application uses cookie-based authentication, an attacker can trick users into sending authenticated HTTP requests without their knowledge from any arbitrary domain they visit. To prevent this vulnerability start by identifying if the framework or library leveraged has built-in features or offers plugins for CSRF protection. CSRF tokens should be unique and securely random. The `Synchronizer Token` or `Double Submit Cookie` patterns with defense-in-depth mechanisms such as the `sameSite` cookie flag can help prevent CSRF. For more information, see: [Cross-site request forgery prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high",
+          "cwe_ids": [
+            "CWE-352"
+          ]
+        },
+        {
+          "file_path": "src/BenchmarkJava/src/main/java/org/owasp/benchmark/testcode_low/BenchmarkTest00010.java",
+          "line": 81,
+          "description": "The application does not appear to verify inbound requests which can lead to a Cross-site request forgery (CSRF) vulnerability. If the application uses cookie-based authentication, an attacker can trick users into sending authenticated HTTP requests without their knowledge from any arbitrary domain they visit. To prevent this vulnerability start by identifying if the framework or library leveraged has built-in features or offers plugins for CSRF protection. CSRF tokens should be unique and securely random. The `Synchronizer Token` or `Double Submit Cookie` patterns with defense-in-depth mechanisms such as the `sameSite` cookie flag can help prevent CSRF. For more information, see: [Cross-site request forgery prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)",
+          "vulnerability_type": "Cross Site Scripting",
+          "severity": "high",
+          "cwe_ids": [
+            "CWE-352"
+          ]
+        }
+      ]
+    }
+  ]
+}

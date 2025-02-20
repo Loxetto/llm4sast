@@ -1,0 +1,81 @@
+[
+    {
+      "# test name": "BenchmarkTest00001",
+      "category": "Path Traversal",
+      "real vulnerability": true,
+      "cwe": 22,
+      "Benchmark version: 1.2": "",
+      "2016-06-1": ""
+    },
+    {
+      "# test name": "BenchmarkTest00002",
+      "category": "Path Traversal",
+      "real vulnerability": true,
+      "cwe": 22,
+      "Benchmark version: 1.2": "",
+      "2016-06-1": ""
+    },
+    {
+      "# test name": "BenchmarkTest00003",
+      "category": "Weak Hashing",
+      "real vulnerability": true,
+      "cwe": 328,
+      "Benchmark version: 1.2": "",
+      "2016-06-1": ""
+    },
+    {
+      "# test name": "BenchmarkTest00004",
+      "category": "trustbound",
+      "real vulnerability": true,
+      "cwe": 501,
+      "Benchmark version: 1.2": "",
+      "2016-06-1": ""
+    },
+    {
+      "# test name": "BenchmarkTest00005",
+      "category": "Weak Encryption",
+      "real vulnerability": true,
+      "cwe": 327,
+      "Benchmark version: 1.2": "",
+      "2016-06-1": ""
+    },
+    {
+      "# test name": "BenchmarkTest00006",
+      "category": "Command Injection",
+      "real vulnerability": true,
+      "cwe": 78,
+      "Benchmark version: 1.2": "",
+      "2016-06-1": ""
+    },
+    {
+      "# test name": "BenchmarkTest00007",
+      "category": "Command Injection",
+      "real vulnerability": true,
+      "cwe": 78,
+      "Benchmark version: 1.2": "",
+      "2016-06-1": ""
+    },
+    {
+      "# test name": "BenchmarkTest00008",
+      "category": "SQL Injection",
+      "real vulnerability": true,
+      "cwe": 89,
+      "Benchmark version: 1.2": "",
+      "2016-06-1": ""
+    },
+    {
+      "# test name": "BenchmarkTest00009",
+      "category": "Weak Hashing",
+      "real vulnerability": false,
+      "cwe": 328,
+      "Benchmark version: 1.2": "",
+      "2016-06-1": ""
+    },
+    {
+      "# test name": "BenchmarkTest00010",
+      "category": "weakrand",
+      "real vulnerability": false,
+      "cwe": 330,
+      "Benchmark version: 1.2": "",
+      "2016-06-1": ""
+    }]
