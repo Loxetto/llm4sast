@@ -92,18 +92,16 @@ def build_prompt(code_chunk: str, file_path: str, sonarqube_path: str, semgrep_p
     semgrep_json_str = filter_semgrep_issues(semgrep_path, file_path)
 
     prompt = f"""
-You are a security expert LLM for sensitive data detection in source code.
-
-Before analyzing the code, consider the SAST findings:
-{{
-  "sonarqube_issues": {sonarqube_json_str},
-  "semgrep_issues": {semgrep_json_str}
-}}
+You are a security analyst LLM. 
+We have partial SAST findings for this file:
+SonarQube: {sonarqube_json_str}
+Semgrep: {semgrep_json_str}
 
 Analyze the following code snippet:
 {code_chunk}
-"""
 
+Identify all potential vulnerabilities or weaknesses. Provide your answer strictly as valid JSON.
+"""
     debug_print(f"\n[INFO] Prompt generato per {file_path}:\n{prompt}\n{'-'*80}")
     return prompt.strip()
 
@@ -137,23 +135,60 @@ def request_llm(model_name: str, prompt: str) -> dict:
         return {}
 
 # -------------------------------------------------------------------------
-# FUNZIONE DI SALVATAGGIO INCREMENTALE
+# DEDUPLICA FINDINGS
+# -------------------------------------------------------------------------
+def deduplicate_findings(findings_list):
+    """
+    Restituisce una nuova lista di findings senza duplicati,
+    conservando l'ordine del primo incontro.
+    """
+    seen = set()
+    unique_findings = []
+
+    for item in findings_list:
+        # Costruiamo una chiave con i campi che consideriamo "identificativi"
+        unique_key = (
+            item.get("file_path"),
+            item.get("line"),
+            item.get("description"),
+            item.get("vulnerability_type"),
+            item.get("severity")
+        )
+        if unique_key not in seen:
+            seen.add(unique_key)
+            unique_findings.append(item)
+
+    return unique_findings
+
+# -------------------------------------------------------------------------
+# SALVATAGGIO INCREMENTALE CON DEDUPLICA
 # -------------------------------------------------------------------------
 def save_incremental_findings(file_path: str, findings: list):
     """
-    Legge l'incremental report, vi appende i nuovi findings e lo riscrive.
+    Legge l'incremental report, vi appende i nuovi findings e lo riscrive
+    rimuovendo i duplicati.
     """
-    # Carica il report corrente (potrebbe essere vuoto se è all'inizio)
     report = maybe_load_json_file(INCREMENTAL_REPORT_PATH)
     if "findings" not in report:
         report["findings"] = []
 
-    entry = {
-        "file": file_path,
-        "findings": findings if findings else "No findings detected"
-    }
+    # Prepara i nuovi findings in formato coerente
+    new_entries = []
+    for f in findings:
+        new_entries.append({
+            "file_path": f.get("file_path", file_path),
+            "line": f.get("line"),
+            "description": f.get("description"),
+            "vulnerability_type": f.get("vulnerability_type"),
+            "severity": f.get("severity")
+        })
 
-    report["findings"].append(entry)
+    # Unisci i vecchi findings con i nuovi
+    combined_findings = report["findings"] + new_entries
+
+    # Deduplica
+    unique_findings = deduplicate_findings(combined_findings)
+    report["findings"] = unique_findings
 
     # Riscrive il report aggiornato
     with open(INCREMENTAL_REPORT_PATH, "w", encoding="utf-8") as f:
@@ -192,26 +227,31 @@ def main():
     for root, _, files in os.walk(CODE_DIR):
         for filename in files:
             file_path = os.path.join(root, filename)
+            # Controlla estensione
             if not file_path.endswith(tuple(TEXT_FILE_EXTENSIONS)):
                 continue
 
             total_files_scanned += 1
+
+            # Legge il contenuto del file
             with open(file_path, "r", encoding="utf-8", errors="replace") as f:
                 code_content = f.read()
 
-            code_chunks = [code_content]  # Per ora niente suddivisione in chunk
+            # Se non vuoi chunkare, usi tutto il file come unico chunk
+            code_chunks = [code_content]
 
             for chunk in code_chunks:
                 prompt = build_prompt(chunk, file_path, SONARQUBE_REPORT_PATH, SEMGREP_REPORT_PATH)
 
+                # Itera sui modelli scelti (puoi usarne uno o più)
                 for model_key in models_chosen:
                     model_name = ALL_AVAILABLE_MODELS[model_key]
                     response = request_llm(model_name, prompt)
 
+                    # Estrae la risposta
                     findings_text = response.get("choices", [{}])[0].get("text", "")
 
                     if findings_text:
-                        # Prova a interpretare la risposta del modello come JSON
                         try:
                             findings_json = json.loads(findings_text)
                             findings = findings_json.get("findings", [])
@@ -220,11 +260,12 @@ def main():
                                 affected_files.add(file_path)
                                 total_vulnerabilities += len(findings)
 
+                                # Conteggio per tipologia
                                 for finding in findings:
                                     vuln_type = finding.get("vulnerability_type", "Unknown")
                                     vulnerability_counts[vuln_type] = vulnerability_counts.get(vuln_type, 0) + 1
 
-                                # Salva i findings (append) nel report incrementale
+                                # Salva (append) e deduplica
                                 save_incremental_findings(file_path, findings)
                         except json.JSONDecodeError:
                             print("[ERROR] Il modello ha restituito un JSON non valido.")
